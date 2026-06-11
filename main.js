@@ -97,6 +97,7 @@ new EXRLoader()
     pmremGenerator.dispose();
   });
 
+//Animate Redraws
 const loader = new GLTFLoader();
 
 function animate() {
