@@ -1,7 +1,7 @@
-import * as THREE from "./js/three.module.js";
-import { OrbitControls } from './js/three/examples/jsm/controls/OrbitControls.js';
-import { GLTFLoader } from './js/three/examples/jsm/loaders/GLTFLoader.js';
-import { EXRLoader } from './js/three/examples/jsm/loaders/EXRLoader.js';
+import * as THREE from 'three';
+import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
+import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
+import { EXRLoader } from 'three/examples/jsm/loaders/EXRLoader.js';
 
 const scene = new THREE.Scene();
 scene.background = new THREE.Color(0x222222);
