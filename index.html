@@ -2,77 +2,176 @@
 <html>
 <head>
     <title>M109R Configurator</title>
-  <script type="module" crossorigin src="/assets/index-DtGHdq91.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-CU3RUKlX.css">
+  <script type="module" crossorigin src="/assets/index-CcHRixo-.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-C3SmK34M.css">
 </head>
 <body>
+  <div id="loadingOverlay">
+  <div id="loadingBox">
+    <div id="loadingText">Loading models...</div>
+    <div id="progressBarOuter">
+      <div id="progressBarInner"></div>
+    </div>
+    <div id="loadingPercent">0%</div>
+  </div>
+</div>
 
   <div id="viewer">
 
+
+    /* COLOR PICKER */
+    <div id="colorPickerPanel">
+      <input type="color" id="bodyColorPicker" value="#ffffff">
+      <label for="bodyColorPicker">Body Color</label>
+      <button id="resetStockButton">Reset to Bike</button>
+  </div>
 
   </div>
 
   <div id="ui">
     <div id="GripsDashTach">
-      <header id="gripsHeader">GRIPS</header>
-      <button id="showGripsStock">Stock Grips</button>
-      <button id="showGripsKury">Kury Grips</button>
-      <header id="tachHeader">DASH/TACH</header>
-      <button id="showTachOG">OG Tachometer</button>
-      <button id="showTachNecelle">Necelle Tachometer</button>
-      <button id="showDashStock">Stock Dash</button>
-      <button id="showDashEXT">Extended Dash</button>
+        <label for="tachSelect">Tachometer</label>
+
+        <select id="tachSelect">
+          <option value="Tach_OG">Stock Tach</option>
+          <option value="Tach_Necelle">Nacelle Tach</option>
+        </select>
+
+      <label for="gripsSelect">Grips</label>
+
+      <select id="gripsSelect">
+        <option value="Grips_STOCK">Stock Grips</option>
+        <option value="Grips_KURY">Kury Grips</option>
+      </select>
+
+      <label for="dashSelect">Dash</label>
+
+      <select id="dashSelect">
+        <option value="Dash_STOCK">Stock Dash</option>
+        <option value="Dash_Extended">Extended Dash</option>
+      </select>
     </div>
 
     <div id="Body">
-      <header id="bodyHeader">BODY</header>
-      <button id="showStockChin">Stock Chin</button>
-      <button id="showMeanyChin">Meancycles Chin</button>
-      <button id="showFenderStock">Stock Front Fender</button>
-      <button id="showFenderStealth">Stealth Front Fender</button>
-      <button id="showNecelleShroud_CHR">Necelle Shroud Chrome</button>
-      <button id="showNecelleShroud_BSCLR">Necelle Shroud Painted</button>
+
+      <label for="chinSelect">Chin</label>
+
+      <select id="chinSelect">
+        <option value="chin_STOCK">Stock Chin</option>
+        <option value="chin_MEANY">Meancycles Chin</option>
+      </select>
+
+      <label for="fenderSelect">Front Fender</label>
+
+      <select id="fenderSelect">
+        <option value="FrontFender_STOCK">Stock Front Fender</option>
+        <option value="FrontFender_STEALTH">Stealth Front Fender</option>
+      </select>
+
+      <label for="necelleShroudSelect">Necelle Shroud</label>
+
+      <select id="necelleShroudSelect">
+        <option value="NecelleShroud_CHR">Chrome Necelle Shroud</option>
+        <option value="NecelleShroud_BSCLR">Painted Necelle Shroud</option>
+      </select>
+
+    </div>
+
+    <div id="Rims">
+      <label for="rimSelect">Rims</label>
+
+      <select id="rimSelect">
+        <option value="Rims_ALMN">Aluminum</option>
+        <option value="Rims_BLK_GLSS">Black Gloss</option>
+        <option value="Rims_BLK_MTT">Black Matte</option>
+      </select>
+    </div>
+
+    <div id="Engine">
+
+      <label for="engineCoversSelect">Engine Covers</label>
+
+      <select id="engineCoversSelect">
+        <option value="EngineCovers_CHR">Chrome Engine Covers</option>
+        <option value="EngineCovers_BLK_GLSS">Black Gloss Engine Covers</option>
+        <option value="EngineCovers_BLK_MTT">Black Matte Engine Covers</option>
+      </select>
+    </div>
+
+    <div id="DerbyCover">
+
+      <label for="derbyCoverSelect">Derby Cover</label>
+
+      <select id="derbyCoverSelect">
+        <option value="DerbyCover_ALMN">Aluminum Derby Cover</option>
+        <option value="DerbyCover_3D_CHR">3D Chrome Derby Cover</option>
+        <option value="DerbyCover_3D_BLK_GLSS">3D Black Gloss Derby Cover</option>
+      </select>
     </div>
 
     <div id="Exhaust">
-      <header id="exhaustHeader">EXHAUSTS</header>
-      <button id="showStockExhaust">Stock Exhaust</button>
-      <button id="showScorpionChrome">Scorpion Tip Chrome</button>
-      <button id="showScorpionGloss">ScorpionTip Black Gloss</button>
-      <button id="showScorpionMatte">ScorpionTip Black Matte</button>
+
+      <label for="exhaustSelect">Exhaust</label>
+
+      <select id="exhaustSelect">
+        <option value="Exhaust_STOCK_CHR">Stock Chrome</option>
+        <option value="Exhaust_STOCK_BLK_GLSS">Stock Black Gloss</option>
+        <option value="Exhaust_STOCK_BLK_MTT">Stock Black Matte</option>
+        <option value="Exhaust_SCORPION_CHR">Scorpion Tip Chrome</option>
+        <option value="Exhaust_SCORPION_BLK_GLSS">ScorpionTip Black Gloss</option>
+        <option value="Exhaust_SCORPION_BLK_MTT">ScorpionTip Black Matte</option>
+      </select>
     </div>
 
     <div id="Seats">
-      <header id="seatsHeader">SEATS</header>
-      <button id="showSeatStock">Stock Seat</button>
-      <button id="showSeatGel">Gel Seat</button>
+
+      <label for="seatSelect">Seat</label>
+
+      <select id="seatSelect">
+        <option value="Seat_STOCK">Stock Seat</option>
+        <option value="Seat_GEL">Gel Seat</option>
+      </select>
     </div>
 
     <div id="Lights">
-      <header id="brakelightsHeader">LIGHTS</header>
-      <button id="showBrakeLightRed">Red Brake Light</button>
-      <button id="showBrakeLightClear">Clear Brake Light</button>
-      <button id="showHeadlampStock">Stock Headlamp</button>
-      <button id="showHeadlampLED">LED Headlamp</button>
-      <button id="showBeaverStock">Stock R. Signals</button>
-      <button id="showBeaverRaw">Raw R. Signals</button>
+
+      <label for="brakelightSelect">Brake Light</label>
+      
+      <select id="brakelightSelect">
+        <option value="BrakeLight_RED">Red Brake Light</option>
+        <option value="BrakeLight_CLEAR">Clear Brake Light</option>
+      </select>
+
+      <label for="headlampSelect">Headlamp</label>
+
+      <select id="headlampSelect">
+        <option value="Headlamp_STOCK">Stock Headlamp</option>
+        <option value="Headlamp_LED">LED Headlamp</option>
+      </select>
+
+      <label for="RearTurnSignalsSelect">RearTurn Signals</label>
+      <select id="RearTurnSignalsSelect">
+        <option value="RearTurnSignals_STOCK">Stock</option>
+        <option value="RearTurnSignals_RAW">Raw Design</option>
+      </select>
     </div>
 
     <div id="Mirrors">
-      <header id="mirrorsHeader">MIRRORS</header>
-      <button id="showMirrorsStock">Stock Mirrors</button>
-      <button id="showMirrorsKuryMag">Kury Mag Mirrors</button>
+
+      <label for="mirrorsSelect">Mirrors</label>
+      
+      <select id="mirrorsSelect">
+        <option value="Mirrors_STOCK">Stock Mirrors</option>
+        <option value="Mirrors_KURYMAG">Kury Mag Mirrors</option>
+      </select>
     </div>
 
     <div id="Decals">
-      <header id="decalsHeader">DECALS</header>
+      <label id="decalsHeader">DECALS</label>
+
       <button id="showBadgesStock">Toggle Stock Badges</button>
       <button id="showStickers_Fender">Toggle Side Fenders</button>
       <button id="showStickers_Rear">Toggle Rear Sticker</button>
-    </div>
-    <div id="Color">
-      <header id="colorHeader">BODY COLOR</header>
-      <input type="color" id="bodyColorPicker" value="#ffffff">
     </div>
   </div>
 
