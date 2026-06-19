@@ -2,8 +2,8 @@
 <html>
 <head>
     <title>M109R Configurator</title>
-  <script type="module" crossorigin src="/assets/index-CcHRixo-.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-C3SmK34M.css">
+  <script type="module" crossorigin src="/assets/index-BzVMZkfn.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-OKePZkZm.css">
 </head>
 <body>
   <div id="loadingOverlay">
@@ -19,12 +19,70 @@
   <div id="viewer">
 
 
-    /* COLOR PICKER */
-    <div id="colorPickerPanel">
-      <input type="color" id="bodyColorPicker" value="#ffffff">
-      <label for="bodyColorPicker">Body Color</label>
-      <button id="resetStockButton">Reset to Bike</button>
-  </div>
+    <div id="mouseicons">
+        <img src="/icons/left-clicker.png" alt="Left Click">
+        <text>Rotate</text>
+        <img src="/icons/right-clicker.png" alt="Right Click">
+        <text>Pan</text>
+        <img src="/icons/middle-mouse-roll.png" alt="Middle Mouse Roll">
+        <text>Zoom</text>
+    </div>
+
+    <div id="version">
+      Version 2.0.0
+    </div>
+
+    <div id="hdriPickerPanel">
+      <button class="hdriButton" data-hdri="studiohdri.exr">1</button>
+      <button class="hdriButton" data-hdri="studiohdri2.exr">2</button>
+      <button class="hdriButton" data-hdri="studiohdri4.exr">3</button>
+    </div>
+
+    <div id="bottomViewerBar">
+
+      <button id="resetStockButton">Reset Bike</button>
+
+      <!-- ############## BODY ################# -->
+      <div id="bodyPickerPanel">
+        <label for="bodyFinishSelect">Body Finish </label>
+
+        <input type="color" id="bodyColorPicker" value="#ffffff">
+
+        <select id="bodyFinishSelect">
+            <option value="gloss">Gloss</option>
+            <option value="matte">Matte</option>
+            <option value="metallicgloss" selected>Metallic Gloss</option>
+        </select>
+
+      </div>
+
+      <!-- ############## RIMS ################# -->
+      <div id="rimsPickerPanel">
+        <label for="rimsFinishSelect">Rim Finish</label>
+
+        <input type="color" id="rimsColorPicker" value="#666666">
+
+        <select id="rimsFinishSelect">
+            <option value="gloss">Gloss</option>
+            <option value="matte">Matte</option>
+            <option value="chrome">Chrome</option>
+        </select>
+
+      </div>
+      <!-- ############## ENGINE ################# -->
+      <div id="enginePickerPanel">
+        <label for="engineFinishSelect">Engine Finish</label>
+
+        <input type="color" id="engineColorPicker" value="#ffffff">
+
+        <select id="engineFinishSelect">
+            <option value="chrome">Chrome</option>
+            <option value="gloss">Gloss</option>
+            <option value="matte">Matte</option>
+        </select>
+
+      </div>
+    </div>
 
   </div>
 
@@ -34,7 +92,7 @@
 
         <select id="tachSelect">
           <option value="Tach_OG">Stock Tach</option>
-          <option value="Tach_Necelle">Nacelle Tach</option>
+          <option value="Tach_Nacelle">Nacelle Tach</option>
         </select>
 
       <label for="gripsSelect">Grips</label>
@@ -64,38 +122,17 @@
       <label for="fenderSelect">Front Fender</label>
 
       <select id="fenderSelect">
-        <option value="FrontFender_STOCK">Stock Front Fender</option>
-        <option value="FrontFender_STEALTH">Stealth Front Fender</option>
+        <option value="FrontFender_STOCK">Stock Fender</option>
+        <option value="FrontFender_STEALTH">Stealth Fender</option>
       </select>
 
-      <label for="necelleShroudSelect">Necelle Shroud</label>
+      <label for="nacelleShroudSelect">Headlight Nacelle</label>
 
-      <select id="necelleShroudSelect">
-        <option value="NecelleShroud_CHR">Chrome Necelle Shroud</option>
-        <option value="NecelleShroud_BSCLR">Painted Necelle Shroud</option>
+      <select id="nacelleShroudSelect">
+        <option value="NacelleShroud_CHR">Chrome Shroud</option>
+        <option value="NacelleShroud_BSCLR">Painted Shroud</option>
       </select>
 
-    </div>
-
-    <div id="Rims">
-      <label for="rimSelect">Rims</label>
-
-      <select id="rimSelect">
-        <option value="Rims_ALMN">Aluminum</option>
-        <option value="Rims_BLK_GLSS">Black Gloss</option>
-        <option value="Rims_BLK_MTT">Black Matte</option>
-      </select>
-    </div>
-
-    <div id="Engine">
-
-      <label for="engineCoversSelect">Engine Covers</label>
-
-      <select id="engineCoversSelect">
-        <option value="EngineCovers_CHR">Chrome Engine Covers</option>
-        <option value="EngineCovers_BLK_GLSS">Black Gloss Engine Covers</option>
-        <option value="EngineCovers_BLK_MTT">Black Matte Engine Covers</option>
-      </select>
     </div>
 
     <div id="DerbyCover">
@@ -103,9 +140,9 @@
       <label for="derbyCoverSelect">Derby Cover</label>
 
       <select id="derbyCoverSelect">
-        <option value="DerbyCover_ALMN">Aluminum Derby Cover</option>
-        <option value="DerbyCover_3D_CHR">3D Chrome Derby Cover</option>
-        <option value="DerbyCover_3D_BLK_GLSS">3D Black Gloss Derby Cover</option>
+        <option value="DerbyCover_ALMN">Aluminum Stock</option>
+        <option value="DerbyCover_3D_CHR">3D Chrome</option>
+        <option value="DerbyCover_3D_BLK_GLSS">3D Black Gloss</option>
       </select>
     </div>
 
@@ -115,11 +152,11 @@
 
       <select id="exhaustSelect">
         <option value="Exhaust_STOCK_CHR">Stock Chrome</option>
-        <option value="Exhaust_STOCK_BLK_GLSS">Stock Black Gloss</option>
-        <option value="Exhaust_STOCK_BLK_MTT">Stock Black Matte</option>
-        <option value="Exhaust_SCORPION_CHR">Scorpion Tip Chrome</option>
-        <option value="Exhaust_SCORPION_BLK_GLSS">ScorpionTip Black Gloss</option>
-        <option value="Exhaust_SCORPION_BLK_MTT">ScorpionTip Black Matte</option>
+        <option value="Exhaust_STOCK_BLK_GLSS">Stock Blk Gloss</option>
+        <option value="Exhaust_STOCK_BLK_MTT">Stock Blk Matte</option>
+        <option value="Exhaust_SCORPION_CHR">Scorpion Chrome</option>
+        <option value="Exhaust_SCORPION_BLK_GLSS">Scorpion Blk Gloss</option>
+        <option value="Exhaust_SCORPION_BLK_MTT">Scorpion Blk Matte</option>
       </select>
     </div>
 
@@ -149,7 +186,7 @@
         <option value="Headlamp_LED">LED Headlamp</option>
       </select>
 
-      <label for="RearTurnSignalsSelect">RearTurn Signals</label>
+      <label for="RearTurnSignalsSelect">Rear Turn Signals</label>
       <select id="RearTurnSignalsSelect">
         <option value="RearTurnSignals_STOCK">Stock</option>
         <option value="RearTurnSignals_RAW">Raw Design</option>
@@ -162,11 +199,12 @@
       
       <select id="mirrorsSelect">
         <option value="Mirrors_STOCK">Stock Mirrors</option>
-        <option value="Mirrors_KURYMAG">Kury Mag Mirrors</option>
+        <option value="Mirrors_KURYMAG">Kuryakyn Magnum Mirrors</option>
       </select>
     </div>
 
     <div id="Decals">
+      
       <label id="decalsHeader">DECALS</label>
 
       <button id="showBadgesStock">Toggle Stock Badges</button>
