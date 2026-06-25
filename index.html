@@ -2,8 +2,8 @@
 <html>
 <head>
     <title>M109R Configurator</title>
-  <script type="module" crossorigin src="/assets/index-C3uHyIYC.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-C5WaZob7.css">
+  <script type="module" crossorigin src="/assets/index-BdEga1ka.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-CN0gEVuf.css">
 </head>
 <body>
   <div id="loadingOverlay">
@@ -29,7 +29,7 @@
     </div>
 
     <div id="version">
-      Version 2.0.0
+      Version 2.1.1
     </div>
 
     <div id="hdriPickerPanel">
@@ -86,159 +86,192 @@
 
   </div>
 
+  <!-- ############################## Scrolling Body ############################## -->
+
   <div id="ui">
-    <div id="GripsDashTach">
-        <label for="tachSelect">Tachometer</label>
 
-        <select id="tachSelect">
-          <option value="Tach_OG">Stock Tach</option>
-          <option value="Tach_Nacelle">Nacelle Tach</option>
-        </select>
+    <!-- Accessories Section -->
+    <div id="Accessories">
+      <header id="AccessoriesHeader">Controls & Accessories</header>
 
-      <label for="gripsSelect">Grips</label>
+      <!-- Accessories Card -->
+      <div id="AccessoriesCard">
+        <div>
+          <label for="tachSelect">Tachometer</label>
 
-      <select id="gripsSelect">
-        <option value="Grips_STOCK">Stock Grips</option>
-        <option value="Grips_KURY_ISO_CHR">Kuryakyn ISO Chrome</option>
-        <option value="Grips_KURY_ISO_BLK_GLSS">Kuryakyn ISO Blk Gloss</option>
-        <option value="Grips_KURY_ISO_STLTO_CHR">Kuryakyn ISO + Stiletto Chrome</option>
-        <option value="Grips_KURY_ISO_STLTO_BLK_GLSS">Kuryakyn ISO + Stiletto Blk Gloss</option>
-      </select>
+          <select id="tachSelect">
+            <option value="Tach_OG">Stock Tach</option>
+            <option value="Tach_Nacelle">Nacelle Tach</option>
+          </select>
+        </div>
+        <div>
+          <label for="gripsSelect">Grips</label>
 
-      <label for="dashSelect">Dash</label>
+          <select id="gripsSelect">
+            <option value="Grips_STOCK">Stock Grips</option>
+            <option value="Grips_KURY_ISO_CHR">Kuryakyn ISO Chrome</option>
+            <option value="Grips_KURY_ISO_BLK_GLSS">Kuryakyn ISO Blk Gloss</option>
+            <option value="Grips_KURY_ISO_STLTO_CHR">Kuryakyn ISO + Stiletto Chrome</option>
+            <option value="Grips_KURY_ISO_STLTO_BLK_GLSS">Kuryakyn ISO + Stiletto Blk Gloss</option>
+          </select>
+        </div>
+        <div>
+          <label for="mirrorsSelect">Mirrors</label>
+        
+          <select id="mirrorsSelect">
+            <option value="Mirrors_STOCK">Stock Mirrors</option>
+            <option value="Mirrors_KURYMAG">Kuryakyn Magnum Mirrors</option>
+          </select>
+        </div>
+        <div>
+          <label for="dashSelect">Dash</label>
 
-      <select id="dashSelect">
-        <option value="Dash_STOCK">Stock Dash</option>
-        <option value="Dash_Extended">Extended Dash</option>
-      </select>
+          <select id="dashSelect">
+            <option value="Dash_STOCK">Stock Dash</option>
+            <option value="Dash_Extended">Extended Dash</option>
+          </select>
+        </div>
+        <div>
+          <label for="forksSelect">Forks</label>
+
+          <select id="forksSelect">
+            <option value="Forks_STOCK">Stock Forks</option>
+            <option value="Forks_SUMOX_FAT_CHR">Sumo X Fat Forks - Chrome</option>
+            <option value="Forks_SUMOX_FAT_BLK_GLSS">Sumo X Fat Forks - Blk Gloss</option>
+            <option value="Forks_SUMOX_FAT_BLK_MTT">Sumo X Fat Forks - Blk Matte</option>
+          </select>
+        </div>
+        <div>
+          <label for="forkendsSelect">Fork Ends</label>
+          
+          <select id="forkendsSelect">
+            <option value="ForkEnds_STOCK">Stock Finish</option>
+            <option value="ForkEnds_BLK_GLSS">Blk Gloss</option>
+          </select>
+        </div>
+      </div>
     </div>
 
-    <div id="Body">
-
-      <label for="chinSelect">Chin</label>
-
-      <select id="chinSelect">
-        <option value="chin_STOCK">Stock Chin</option>
-        <option value="chin_MEANY">Meancycles Chin</option>
-      </select>
-
-      <label for="fenderSelect">Front Fender</label>
-
-      <select id="fenderSelect">
-        <option value="FrontFender_STOCK">Stock Fender</option>
-        <option value="FrontFender_STEALTH">Stealth Fender</option>
-      </select>
-
-      <label for="nacelleShroudSelect">Headlight Nacelle</label>
-
-      <select id="nacelleShroudSelect">
-        <option value="NacelleShroud_CHR">Chrome Shroud</option>
-        <option value="NacelleShroud_BSCLR">Painted Shroud</option>
-      </select>
-
-    </div>
-
-    <div id="DerbyCover">
-
-      <label for="derbyCoverSelect">Derby Cover</label>
-
-      <select id="derbyCoverSelect">
-        <option value="DerbyCover_ALMN">Aluminum Stock</option>
-        <option value="DerbyCover_3D_CHR">3D Chrome</option>
-        <option value="DerbyCover_3D_BLK_GLSS">3D Black Gloss</option>
-      </select>
-    </div>
-
+    <!-- Exhaust Section -->
     <div id="Exhaust">
+      <header id="ExhaustHeader">Exhausts</header>
 
-      <label for="exhaustSelect">Exhaust</label>
+      <!-- Exhaust Card -->
+      <div id="ExhaustCard">
 
-      <select id="exhaustSelect">
-        <option value="Exhaust_STOCK_CHR">Stock - Chrome</option>
-        <option value="Exhaust_STOCK_BLK_GLSS">Stock - Blk Gloss</option>
-        <option value="Exhaust_STOCK_BLK_MTT">Stock - Blk Matte</option>
-        <option value="Exhaust_SCORPION_CHR">Scorpion - Chrome</option>
-        <option value="Exhaust_SCORPION_BLK_GLSS">Scorpion - Blk Gloss</option>
-        <option value="Exhaust_SCORPION_BLK_MTT">Scorpion - Blk Matte</option>
-        <option value="Exhaust_SharpCurve_CHR">Freedom Exhaust Sharp Curve Radius Scallop - Chrome</option>
-        <option value="Exhaust_SharpCurve_BLK_GLSS">Freedom Exhaust Sharp Curve Radius Scallop - Blk Gloss</option>
-        <option value="Exhaust_SharpCurve_BLK_MTT">Freedom Exhaust Sharp Curve Radius Scallop - Blk Matte</option>
-        <option value="Exhaust_VLCTY_PRO_SHRT_CRMC_BLK">Hard Krome VPR - Ceramic Blk </option>
-        <option value="Exhaust_VLCTY_PRO_SHRT_CHR"> Hard Krome VPR - Chrome</option>
-        <option value="Exhaust_SDBRNR_SHRT_CHR">Hard Krome Short Sideburner - Chrome</option>
-        <option value="Exhaust_SDBRNR_SHRT_CRMC_BLK">Hard Krome Short Sideburner - Ceramic Blk</option>
-      </select>
+        <label for="exhaustSelect">Exhaust</label>
+
+        <select id="exhaustSelect">
+          <option value="Exhaust_STOCK_CHR">Stock - Chrome</option>
+          <option value="Exhaust_STOCK_BLK_GLSS">Stock - Blk Gloss</option>
+          <option value="Exhaust_STOCK_BLK_MTT">Stock - Blk Matte</option>
+          <option value="Exhaust_SCORPION_CHR">Scorpion - Chrome</option>
+          <option value="Exhaust_SCORPION_BLK_GLSS">Scorpion - Blk Gloss</option>
+          <option value="Exhaust_SCORPION_BLK_MTT">Scorpion - Blk Matte</option>
+          <option value="Exhaust_SharpCurve_CHR">Freedom Exhaust Sharp Curve Radius Scallop - Chrome</option>
+          <option value="Exhaust_SharpCurve_BLK_GLSS">Freedom Exhaust Sharp Curve Radius Scallop - Blk Gloss</option>
+          <option value="Exhaust_SharpCurve_BLK_MTT">Freedom Exhaust Sharp Curve Radius Scallop - Blk Matte</option>
+          <option value="Exhaust_VLCTY_PRO_SHRT_CRMC_BLK">Hard Krome VPR - Ceramic Blk </option>
+          <option value="Exhaust_VLCTY_PRO_SHRT_CHR"> Hard Krome VPR - Chrome</option>
+          <option value="Exhaust_SDBRNR_SHRT_CHR">Hard Krome Short Sideburner - Chrome</option>
+          <option value="Exhaust_SDBRNR_SHRT_CRMC_BLK">Hard Krome Short Sideburner - Ceramic Blk</option>
+        </select>
+      </div>
     </div>
 
-    <div id="Forks">
+    <!-- Body Section -->
+    <div id="Body">
+      <header id="BodyHeader">Body</header>
 
-      <label for="forksSelect">Forks</label>
+      <!-- Body Card -->
+      <div id="BodyCard">
+        <div>
+          <label for="chinSelect">Chin</label>
 
-      <select id="forksSelect">
-        <option value="Forks_STOCK">Stock Forks</option>
-        <option value="Forks_SUMOX_FAT_CHR">Sumo X Fat Forks - Chrome</option>
-        <option value="Forks_SUMOX_FAT_BLK_GLSS">Sumo X Fat Forks - Blk Gloss</option>
-        <option value="Forks_SUMOX_FAT_BLK_MTT">Sumo X Fat Forks - Blk Matte</option>
-      </select>
+          <select id="chinSelect">
+            <option value="chin_STOCK">Stock Chin</option>
+            <option value="chin_MEANY">Meancycles Chin</option>
+          </select>
+        </div>
+        <div>
+          <label for="fenderSelect">Front Fender</label>
 
-      <label for="forkendsSelect">Fork Ends</label>
-      
-      <select id="forkendsSelect">
-        <option value="ForkEnds_STOCK">Stock Finish</option>
-        <option value="ForkEnds_BLK_GLSS">Blk Gloss</option>
-      </select>
+          <select id="fenderSelect">
+            <option value="FrontFender_STOCK">Stock Fender</option>
+            <option value="FrontFender_STEALTH">Stealth Fender</option>
+          </select>
+        </div>
+        <div>
+          <label for="nacelleShroudSelect">Headlight Nacelle</label>
+
+          <select id="nacelleShroudSelect">
+            <option value="NacelleShroud_CHR">Chrome Shroud</option>
+            <option value="NacelleShroud_BSCLR">Painted Shroud</option>
+          </select>
+        </div>
+        <div>
+          <label for="seatSelect">Seat</label>
+
+          <select id="seatSelect">
+            <option value="Seat_STOCK">Stock Seat</option>
+            <option value="Seat_GEL">Gel Seat</option>
+          </select>
+        </div>
+        <div>
+          <label for="derbyCoverSelect">Derby Cover</label>
+
+          <select id="derbyCoverSelect">
+            <option value="DerbyCover_ALMN">Aluminum Stock</option>
+            <option value="DerbyCover_3D_CHR">3D Chrome</option>
+            <option value="DerbyCover_3D_BLK_GLSS">3D Black Gloss</option>
+          </select>
+          </div>
+      </div>
+
     </div>
 
-    <div id="Seats">
+    <!-- Lighting Section -->
+    <div id="Lighting">
+      <header id="LightingHeader">Lighting</header>
 
-      <label for="seatSelect">Seat</label>
+      <!-- Lighting Card -->
+      <div id="LightingCard">
+        <div>
+          <label for="brakelightSelect">Brake Light</label>
+          
+          <select id="brakelightSelect">
+            <option value="BrakeLight_RED">Red Brake Light</option>
+            <option value="BrakeLight_CLEAR">Clear Brake Light</option>
+          </select>
+        </div>
+        <div>
+          <label for="headlampSelect">Headlamp</label>
 
-      <select id="seatSelect">
-        <option value="Seat_STOCK">Stock Seat</option>
-        <option value="Seat_GEL">Gel Seat</option>
-      </select>
+          <select id="headlampSelect">
+            <option value="Headlamp_STOCK">Stock Headlamp</option>
+            <option value="Headlamp_LED">LED Headlamp</option>
+          </select>
+        </div>
+        <div>
+          <label for="RearTurnSignalsSelect">Rear Turn Signals</label>
+          <select id="RearTurnSignalsSelect">
+            <option value="RearTurnSignals_STOCK">Stock</option>
+            <option value="RearTurnSignals_RAW">Raw Design</option>
+          </select>
+        </div>
+      </div>
     </div>
 
-    <div id="Lights">
-
-      <label for="brakelightSelect">Brake Light</label>
-      
-      <select id="brakelightSelect">
-        <option value="BrakeLight_RED">Red Brake Light</option>
-        <option value="BrakeLight_CLEAR">Clear Brake Light</option>
-      </select>
-
-      <label for="headlampSelect">Headlamp</label>
-
-      <select id="headlampSelect">
-        <option value="Headlamp_STOCK">Stock Headlamp</option>
-        <option value="Headlamp_LED">LED Headlamp</option>
-      </select>
-
-      <label for="RearTurnSignalsSelect">Rear Turn Signals</label>
-      <select id="RearTurnSignalsSelect">
-        <option value="RearTurnSignals_STOCK">Stock</option>
-        <option value="RearTurnSignals_RAW">Raw Design</option>
-      </select>
-    </div>
-
-    <div id="Mirrors">
-
-      <label for="mirrorsSelect">Mirrors</label>
-      
-      <select id="mirrorsSelect">
-        <option value="Mirrors_STOCK">Stock Mirrors</option>
-        <option value="Mirrors_KURYMAG">Kuryakyn Magnum Mirrors</option>
-      </select>
-    </div>
-
+    <!-- Decals Section -->
     <div id="Decals">
-      
-      <label id="decalsHeader">DECALS</label>
+      <header id="DecalsHeader">Decals</header>
 
-      <button id="showBadgesStock">Toggle Stock Badges</button>
-      <button id="showStickers_Fender">Toggle Side Fenders</button>
-      <button id="showStickers_Rear">Toggle Rear Sticker</button>
+      <!-- Decals Card -->
+      <div id="DecalsCard">
+        <button id="showBadgesStock">Toggle Stock Badges</button>
+        <button id="showStickers_Fender">Toggle Side Fenders</button>
+        <button id="showStickers_Rear">Toggle Rear Sticker</button>
+      </div>
     </div>
   </div>
 
