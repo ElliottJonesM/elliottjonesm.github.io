@@ -2,8 +2,8 @@
 <html>
 <head>
     <title>M109R Configurator</title>
-  <script type="module" crossorigin src="/assets/index-C70QT_v2.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-B4d6wdet.css">
+  <script type="module" crossorigin src="/assets/index-C3uHyIYC.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-C5WaZob7.css">
 </head>
 <body>
   <div id="loadingOverlay">
@@ -33,9 +33,9 @@
     </div>
 
     <div id="hdriPickerPanel">
-      <button class="hdriButton" data-hdri="studiohdri.exr">1</button>
+      <button class="hdriButton" data-hdri="studiohdri4.exr">1</button>
       <button class="hdriButton" data-hdri="studiohdri2.exr">2</button>
-      <button class="hdriButton" data-hdri="studiohdri4.exr">3</button>
+      <button class="hdriButton" data-hdri="studiohdri.exr">3</button>
     </div>
 
     <div id="bottomViewerBar">
@@ -99,7 +99,10 @@
 
       <select id="gripsSelect">
         <option value="Grips_STOCK">Stock Grips</option>
-        <option value="Grips_KURY">Kury Grips</option>
+        <option value="Grips_KURY_ISO_CHR">Kuryakyn ISO Chrome</option>
+        <option value="Grips_KURY_ISO_BLK_GLSS">Kuryakyn ISO Blk Gloss</option>
+        <option value="Grips_KURY_ISO_STLTO_CHR">Kuryakyn ISO + Stiletto Chrome</option>
+        <option value="Grips_KURY_ISO_STLTO_BLK_GLSS">Kuryakyn ISO + Stiletto Blk Gloss</option>
       </select>
 
       <label for="dashSelect">Dash</label>
@@ -151,12 +154,38 @@
       <label for="exhaustSelect">Exhaust</label>
 
       <select id="exhaustSelect">
-        <option value="Exhaust_STOCK_CHR">Stock Chrome</option>
-        <option value="Exhaust_STOCK_BLK_GLSS">Stock Blk Gloss</option>
-        <option value="Exhaust_STOCK_BLK_MTT">Stock Blk Matte</option>
-        <option value="Exhaust_SCORPION_CHR">Scorpion Chrome</option>
-        <option value="Exhaust_SCORPION_BLK_GLSS">Scorpion Blk Gloss</option>
-        <option value="Exhaust_SCORPION_BLK_MTT">Scorpion Blk Matte</option>
+        <option value="Exhaust_STOCK_CHR">Stock - Chrome</option>
+        <option value="Exhaust_STOCK_BLK_GLSS">Stock - Blk Gloss</option>
+        <option value="Exhaust_STOCK_BLK_MTT">Stock - Blk Matte</option>
+        <option value="Exhaust_SCORPION_CHR">Scorpion - Chrome</option>
+        <option value="Exhaust_SCORPION_BLK_GLSS">Scorpion - Blk Gloss</option>
+        <option value="Exhaust_SCORPION_BLK_MTT">Scorpion - Blk Matte</option>
+        <option value="Exhaust_SharpCurve_CHR">Freedom Exhaust Sharp Curve Radius Scallop - Chrome</option>
+        <option value="Exhaust_SharpCurve_BLK_GLSS">Freedom Exhaust Sharp Curve Radius Scallop - Blk Gloss</option>
+        <option value="Exhaust_SharpCurve_BLK_MTT">Freedom Exhaust Sharp Curve Radius Scallop - Blk Matte</option>
+        <option value="Exhaust_VLCTY_PRO_SHRT_CRMC_BLK">Hard Krome VPR - Ceramic Blk </option>
+        <option value="Exhaust_VLCTY_PRO_SHRT_CHR"> Hard Krome VPR - Chrome</option>
+        <option value="Exhaust_SDBRNR_SHRT_CHR">Hard Krome Short Sideburner - Chrome</option>
+        <option value="Exhaust_SDBRNR_SHRT_CRMC_BLK">Hard Krome Short Sideburner - Ceramic Blk</option>
+      </select>
+    </div>
+
+    <div id="Forks">
+
+      <label for="forksSelect">Forks</label>
+
+      <select id="forksSelect">
+        <option value="Forks_STOCK">Stock Forks</option>
+        <option value="Forks_SUMOX_FAT_CHR">Sumo X Fat Forks - Chrome</option>
+        <option value="Forks_SUMOX_FAT_BLK_GLSS">Sumo X Fat Forks - Blk Gloss</option>
+        <option value="Forks_SUMOX_FAT_BLK_MTT">Sumo X Fat Forks - Blk Matte</option>
+      </select>
+
+      <label for="forkendsSelect">Fork Ends</label>
+      
+      <select id="forkendsSelect">
+        <option value="ForkEnds_STOCK">Stock Finish</option>
+        <option value="ForkEnds_BLK_GLSS">Blk Gloss</option>
       </select>
     </div>
 
