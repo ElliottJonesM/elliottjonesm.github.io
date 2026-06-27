@@ -2,8 +2,8 @@
 <html>
 <head>
     <title>M109R Configurator</title>
-  <script type="module" crossorigin src="/assets/index-D4T7_8jJ.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-D_PiS6XF.css">
+  <script type="module" crossorigin src="/assets/index-gQf-W7Tv.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-Cj381iyK.css">
 </head>
 <body>
   <div id="loadingOverlay">
@@ -29,7 +29,7 @@
     </div>
 
     <div id="version">
-      Version 2.1.1
+      Version 2.2.2
     </div>
 
     <div id="hdriPickerPanel">
@@ -38,9 +38,9 @@
       <button class="hdriButton" data-hdri="studiohdri.exr">3</button>
     </div>
 
-    <div id="bottomViewerBar">
+    <button id="resetStockButton">Reset Bike</button>
 
-      <button id="resetStockButton">Reset Bike</button>
+    <div id="bottomViewerBar">
 
       <!-- ############## BODY ################# -->
       <div id="bodyPickerPanel">
@@ -243,7 +243,9 @@
             <option value="BrakeLight_RED">Red Brake Light</option>
             <option value="BrakeLight_CLEAR">Clear Brake Light</option>
           </select>
+
         </div>
+
         <div>
           <label for="headlampSelect">Headlamp</label>
 
@@ -251,15 +253,32 @@
             <option value="Headlamp_STOCK">Stock Headlamp</option>
             <option value="Headlamp_LED">LED Headlamp</option>
           </select>
+
         </div>
+
         <div>
           <label for="RearTurnSignalsSelect">Rear Turn Signals</label>
+
           <select id="RearTurnSignalsSelect">
-            <option value="RearTurnSignals_STOCK">Stock</option>
+            <option value="RearTurnSignals_STOCK_AMBR">Stock Amber</option>
+            <option value="RearTurnSignals_STOCK_WHITE">Stock White</option>
             <option value="RearTurnSignals_RAW">Raw Design</option>
           </select>
+
         </div>
+
+        <div>
+          <label for="FrontTurnSignalsSelect">Front Turn Signals</label>
+
+          <select id="FrontTurnSignalsSelect">
+            <option value="FrontTurnSignals_STOCK_AMBR">Stock Amber</option>
+            <option value="FrontTurnSignals_STOCK_WHITE">Stock White</option>
+          </select>
+
+        </div>
+
       </div>
+
     </div>
 
     <!-- Decals Section -->
