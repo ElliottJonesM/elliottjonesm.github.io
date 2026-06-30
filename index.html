@@ -2,8 +2,8 @@
 <html>
 <head>
     <title>M109R Configurator</title>
-  <script type="module" crossorigin src="/assets/index-gQf-W7Tv.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-Cj381iyK.css">
+  <script type="module" crossorigin src="/assets/index-6udeE6uj.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-BjVJrh6V.css">
 </head>
 <body>
   <div id="loadingOverlay">
@@ -29,7 +29,7 @@
     </div>
 
     <div id="version">
-      Version 2.2.2
+      Version 2.3.2
     </div>
 
     <div id="hdriPickerPanel">
@@ -136,6 +136,8 @@
 
           <select id="forksSelect">
             <option value="Forks_STOCK">Stock Forks</option>
+            <option value="Forks_STOCK_BLK_GLSS">Stock Forks - Blk Gloss</option>
+            <option value="Forks_STOCK_BLK_MTT">Stock Forks - Blk Matte</option>
             <option value="Forks_SUMOX_FAT_CHR">Sumo X Fat Forks - Chrome</option>
             <option value="Forks_SUMOX_FAT_BLK_GLSS">Sumo X Fat Forks - Blk Gloss</option>
             <option value="Forks_SUMOX_FAT_BLK_MTT">Sumo X Fat Forks - Blk Matte</option>
@@ -149,33 +151,62 @@
             <option value="ForkEnds_BLK_GLSS">Blk Gloss</option>
           </select>
         </div>
+
+        <div>
+          <label for="frontrotorsSelect">Front Rotors</label>
+
+          <select id="frontrotorsSelect">
+            <option value="FrontRotors_STOCK">Stock Rotors</option>
+            <option value="FrontRotors_STOCK_BLK_GLSS">Stock Rotors - Blk Gloss</option>
+            <option value="FrontRotors_ARASH_BLK">Arashi Rotors - Blk</option>
+            <option value="FrontRotors_ARASH_GOLD">Arashi Rotors - Gold</option>
+          </select>
+        </div>
       </div>
     </div>
 
-    <!-- Exhaust Section -->
-    <div id="Exhaust">
-      <header id="ExhaustHeader">Exhausts</header>
+    <!-- Intake & Exhaust Section -->
+    <div id="IntakeExhaust">
+      <header id="IntakeExhaustHeader">Intake & Exhausts</header>
 
-      <!-- Exhaust Card -->
-      <div id="ExhaustCard">
+      <!-- Intake & Exhaust Card -->
+      <div id="IntakeExhaustCard">
+        <div>
+          <label for="intakeSelect">Intake</label>
 
-        <label for="exhaustSelect">Exhaust</label>
+          <select id="intakeSelect">
+            <option value="Intake_STOCK_CHR">Stock - Chrome</option>
+            <option value="Intake_STOCK_BLK_GLSS">Stock - Blk Gloss</option>
+            <option value="Intake_STOCK_BLK_MTT">Stock - Blk Matte</option>
+            <option value="Intake_Q5_CHR">Q5 - Chrome</option>
+            <option value="Intake_Q5_BLK_GLSS">Q5 - Blk Gloss</option>
+            <option value="Intake_Q5_BLK_MTT">Q5 - Blk Matte</option>
+          </select>
+        </div>
 
-        <select id="exhaustSelect">
-          <option value="Exhaust_STOCK_CHR">Stock - Chrome</option>
-          <option value="Exhaust_STOCK_BLK_GLSS">Stock - Blk Gloss</option>
-          <option value="Exhaust_STOCK_BLK_MTT">Stock - Blk Matte</option>
-          <option value="Exhaust_SCORPION_CHR">Scorpion - Chrome</option>
-          <option value="Exhaust_SCORPION_BLK_GLSS">Scorpion - Blk Gloss</option>
-          <option value="Exhaust_SCORPION_BLK_MTT">Scorpion - Blk Matte</option>
-          <option value="Exhaust_SharpCurve_CHR">Freedom Exhaust Sharp Curve Radius Scallop - Chrome</option>
-          <option value="Exhaust_SharpCurve_BLK_GLSS">Freedom Exhaust Sharp Curve Radius Scallop - Blk Gloss</option>
-          <option value="Exhaust_SharpCurve_BLK_MTT">Freedom Exhaust Sharp Curve Radius Scallop - Blk Matte</option>
-          <option value="Exhaust_VLCTY_PRO_SHRT_CRMC_BLK">Hard Krome VPR - Ceramic Blk </option>
-          <option value="Exhaust_VLCTY_PRO_SHRT_CHR"> Hard Krome VPR - Chrome</option>
-          <option value="Exhaust_SDBRNR_SHRT_CHR">Hard Krome Short Sideburner - Chrome</option>
-          <option value="Exhaust_SDBRNR_SHRT_CRMC_BLK">Hard Krome Short Sideburner - Ceramic Blk</option>
-        </select>
+        <div>
+          <label for="exhaustSelect">Exhaust</label>
+
+          <select id="exhaustSelect">
+            <option value="Exhaust_STOCK_CHR">Stock - Chrome</option>
+            <option value="Exhaust_STOCK_BLK_GLSS">Stock - Blk Gloss</option>
+            <option value="Exhaust_STOCK_BLK_MTT">Stock - Blk Matte</option>
+            <option value="Exhaust_SCORPION_CHR">Scorpion - Chrome</option>
+            <option value="Exhaust_SCORPION_BLK_GLSS">Scorpion - Blk Gloss</option>
+            <option value="Exhaust_SCORPION_BLK_MTT">Scorpion - Blk Matte</option>
+            <option value="Exhaust_SharpCurve_CHR">Freedom Exhaust Sharp Curve Radius Scallop - Chrome</option>
+            <option value="Exhaust_SharpCurve_BLK_GLSS">Freedom Exhaust Sharp Curve Radius Scallop - Blk Gloss</option>
+            <option value="Exhaust_SharpCurve_BLK_MTT">Freedom Exhaust Sharp Curve Radius Scallop - Blk Matte</option>
+            <option value="Exhaust_VLCTY_PRO_SHRT_CHR"> Hard Krome VPR Short - Chrome</option>
+            <option value="Exhaust_VLCTY_PRO_SHRT_CRMC_BLK">Hard Krome VPR Short - Ceramic Blk </option>
+            <option value="Exhaust_VLCTY_PRO_CHR"> Hard Krome VPR - Chrome</option>
+            <option value="Exhaust_VLCTY_PRO_CRMC_BLK">Hard Krome VPR - Ceramic Blk </option>
+            <option value="Exhaust_SDBRNR_SHRT_CHR">Hard Krome Short Sideburner - Chrome</option>
+            <option value="Exhaust_SDBRNR_SHRT_CRMC_BLK">Hard Krome Short Sideburner - Ceramic Blk</option>
+            <option value="Exhaust_SDBRNR_CHR">Hard Krome Sideburner - Chrome</option>
+            <option value="Exhaust_SDBRNR_CRMC_BLK"> Hard Krome Sideburner - Ceramic Blk</option>
+          </select>
+        </div>
       </div>
     </div>
 
@@ -242,6 +273,7 @@
           <select id="brakelightSelect">
             <option value="BrakeLight_RED">Red Brake Light</option>
             <option value="BrakeLight_CLEAR">Clear Brake Light</option>
+            <option value="BrakeLight_SMOKE">Smoke Brake Light</option>
           </select>
 
         </div>
@@ -273,6 +305,8 @@
           <select id="FrontTurnSignalsSelect">
             <option value="FrontTurnSignals_STOCK_AMBR">Stock Amber</option>
             <option value="FrontTurnSignals_STOCK_WHITE">Stock White</option>
+            <option value="FrontTurnSignals_LOWPRO1_CHR">Low Profile 1 - Chrome</option>
+            <option value="FrontTurnSignals_LOWPRO1_BLK">Low Profile 1 - Blk</option>
           </select>
 
         </div>
