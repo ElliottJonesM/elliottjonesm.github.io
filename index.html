@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>M109R Configurator</title>
-  <script type="module" crossorigin src="/assets/index--wwuczBV.js"></script>
+  <script type="module" crossorigin src="/assets/index-F8tivjAX.js"></script>
   <link rel="stylesheet" crossorigin href="/assets/index-BPYDqTef.css">
 </head>
 <body>
@@ -33,7 +33,7 @@
     </div>
 
     <div id="version">
-      Version 3.1.1
+      Version 3.2.1
     </div>
 
     <div id="hdriPickerPanel">
@@ -102,6 +102,17 @@
 
       <!-- Accessories Card -->
       <div id="AccessoriesCard">
+
+        <div>
+          <label for="handlebarsSelect">Handlebars</label>
+
+          <select id="handlebarsSelect">
+            <option value="HandleBars_CHR">Chrome</option>
+            <option value="HandleBars_BLK_GLSS">Black Gloss</option>
+            <option value="HandleBars_BLK_MTT">Black Matte</option>
+          </select>
+        </div>
+
         <div>
           <label for="tachSelect">Tachometer</label>
 
@@ -134,9 +145,32 @@
 
           <select id="dashSelect">
             <option value="Dash_STOCK">Stock Dash</option>
+            <option value="Dash_STOCK_COLORMATCH">Stock Dash - Color Matched</option>
+            <option value="Dash_STOCK_BLK_GLSS">Stock Dash - Black Gloss</option>
             <option value="Dash_Extended">Extended Dash</option>
           </select>
         </div>
+
+        <div>
+          <label for="risersSelect">Risers</label>
+
+          <select id="risersSelect">
+            <option value="Risers_STOCK">Stock Risers</option>
+            <option value="Risers_STOCK_BLK_GLSS">Stock Risers - Black Gloss</option>
+            <option value="Risers_STOCK_BLK_MTT">Stock Risers - Black Matte</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="tripletreeSelect">Triple Tree</label>
+
+          <select id="tripletreeSelect">
+            <option value="TripleTree_STOCK">Stock Triple Tree</option>
+            <option value="TripleTree_STOCK_BLK_GLSS">Stock Triple Tree - Black Gloss</option>
+            <option value="TripleTree_STOCK_BLK_MTT">Stock Triple Tree - Black Matte</option>
+          </select>
+        </div>
+
         <div>
           <label for="forksSelect">Forks</label>
 
@@ -149,6 +183,17 @@
             <option value="Forks_SUMOX_FAT_BLK_MTT">Sumo X Fat Forks - Blk Matte</option>
           </select>
         </div>
+
+        <div>
+          <label for="forkcapsSelect">Fork Caps</label>
+
+          <select id="forkcapsSelect">
+            <option value="ForkCaps_STOCK">Stock Caps</option>
+            <option value="ForkCaps_BLK_GLSS">Blk Gloss</option>
+            <option value="ForkCaps_BLK_MTT">Blk Matte</option>
+          </select>
+        </div>
+
         <div>
           <label for="forkendsSelect">Fork Ends</label>
           
@@ -246,7 +291,7 @@
 
           <select id="nacelleShroudSelect">
             <option value="NacelleShroud_CHR">Chrome Shroud</option>
-            <option value="NacelleShroud_BSCLR">Painted Shroud</option>
+            <option value="NacelleShroud_BSCLR">Color Matched</option>
           </select>
         </div>
         <div>
@@ -264,6 +309,16 @@
           <select id="rearFenderSelect">
             <option value="RearFender_STOCK">Stock Rear</option>
             <option value="RearFender_STEALTH">Stealth Rear</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="siderearcoverSelect">Rear Side Cover</label>
+
+          <select id="siderearcoverSelect">
+            <option value="SideRearCover_STOCK">Stock</option>
+            <option value="SideRearCover_COLORMATCH">Stock - Color Matched</option>
+            <option value="SideRearCover_STOCK_CHR_PLT">Stock - Chrome Plates</option>
           </select>
         </div>
 
