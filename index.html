@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>M109R Configurator</title>
-  <script type="module" crossorigin src="/assets/index-F8tivjAX.js"></script>
+  <script type="module" crossorigin src="/assets/index-Dmt325OO.js"></script>
   <link rel="stylesheet" crossorigin href="/assets/index-BPYDqTef.css">
 </head>
 <body>
@@ -16,406 +16,418 @@
   </div>
 </div>
 
-  <div id="viewer">
+<div id="appShell">
+    <div id="viewer">
 
 
-    <div id="mouseicons">
-        <img src="/icons/left-clicker.png" alt="Left Click">
-        <text>Rotate</text>
-        <img src="/icons/right-clicker.png" alt="Right Click">
-        <text>Pan</text>
-        <img src="/icons/middle-mouse-roll.png" alt="Middle Mouse Roll">
-        <text>Zoom</text>
-    </div>
-
-    <div id="donate">
-        <a href="https://www.paypal.com/donate/?business=E2LTBJEFCEF8E&no_recurring=1&item_name=Enjoying+the+configurator?+Donations+help+support+continued+updates%2C+new+parts%2C+and+improvements.+Thank+you%21&currency_code=USD">Donate</a>
-    </div>
-
-    <div id="version">
-      Version 3.2.1
-    </div>
-
-    <div id="hdriPickerPanel">
-      <button class="hdriButton" data-hdri="studiohdri4.exr">1</button>
-      <button class="hdriButton" data-hdri="studiohdri2.exr">2</button>
-      <button class="hdriButton" data-hdri="studiohdri.exr">3</button>
-    </div>
-
-    <button id="resetStockButton">Reset Bike</button>
-    <button id="saveConfigurationButton">Save Build</button>
-    <button id="loadConfigurationButton">Load Saved Build</button>
-
-    <div id="bottomViewerBar">
-
-      <!-- ############## BODY ################# -->
-      <div id="bodyPickerPanel">
-        <label for="bodyFinishSelect">Body Finish </label>
-
-        <input type="color" id="bodyColorPicker" value="#ffffff">
-
-        <select id="bodyFinishSelect">
-            <option value="gloss">Gloss</option>
-            <option value="matte">Matte</option>
-            <option value="metallicgloss" selected>Metallic Gloss</option>
-        </select>
-
+      <div id="mouseicons">
+          <img src="/icons/left-clicker.png" alt="Left Click">
+          <text>Rotate</text>
+          <img src="/icons/right-clicker.png" alt="Right Click">
+          <text>Pan</text>
+          <img src="/icons/middle-mouse-roll.png" alt="Middle Mouse Roll">
+          <text>Zoom</text>
       </div>
 
-      <!-- ############## RIMS ################# -->
-      <div id="rimsPickerPanel">
-        <label for="rimsFinishSelect">Rim Finish</label>
-
-        <input type="color" id="rimsColorPicker" value="#666666">
-
-        <select id="rimsFinishSelect">
-            <option value="gloss">Gloss</option>
-            <option value="matte">Matte</option>
-            <option value="chrome">Chrome</option>
-        </select>
-
+      <div id="donate">
+          <a href="https://www.paypal.com/donate/?business=E2LTBJEFCEF8E&no_recurring=1&item_name=Enjoying+the+configurator?+Donations+help+support+continued+updates%2C+new+parts%2C+and+improvements.+Thank+you%21&currency_code=USD">Donate</a>
       </div>
-      <!-- ############## ENGINE ################# -->
-      <div id="enginePickerPanel">
-        <label for="engineFinishSelect">Engine Finish</label>
 
-        <input type="color" id="engineColorPicker" value="#ffffff">
-
-        <select id="engineFinishSelect">
-            <option value="chrome">Chrome</option>
-            <option value="gloss">Gloss</option>
-            <option value="matte">Matte</option>
-        </select>
-
+      <div id="version">
+        Version 3.3.1
       </div>
+
+      <div id="hdriPickerPanel">
+        <button class="hdriButton" data-hdri="studiohdri4.exr">1</button>
+        <button class="hdriButton" data-hdri="studiohdri2.exr">2</button>
+        <button class="hdriButton" data-hdri="studiohdri.exr">3</button>
+      </div>
+
+      <button id="resetStockButton">Reset Bike</button>
+      <button id="saveConfigurationButton">Save Build</button>
+      <button id="loadConfigurationButton">Load Saved Build</button>
+
+      <div id="bottomViewerBar">
+
+        <!-- ############## BODY ################# -->
+        <div id="bodyPickerPanel">
+          <label for="bodyFinishSelect">Body Finish </label>
+
+          <input type="color" id="bodyColorPicker" value="#ffffff">
+
+          <select id="bodyFinishSelect">
+              <option value="gloss">Gloss</option>
+              <option value="matte">Matte</option>
+              <option value="metallicgloss" selected>Metallic Gloss</option>
+          </select>
+
+        </div>
+
+        <!-- ############## RIMS ################# -->
+        <div id="rimsPickerPanel">
+          <label for="rimsFinishSelect">Rim Finish</label>
+
+          <input type="color" id="rimsColorPicker" value="#666666">
+
+          <select id="rimsFinishSelect">
+              <option value="gloss">Gloss</option>
+              <option value="matte">Matte</option>
+              <option value="chrome">Chrome</option>
+          </select>
+
+        </div>
+        <!-- ############## ENGINE ################# -->
+        <div id="enginePickerPanel">
+          <label for="engineFinishSelect">Engine Finish</label>
+
+          <input type="color" id="engineColorPicker" value="#ffffff">
+
+          <select id="engineFinishSelect">
+              <option value="chrome">Chrome</option>
+              <option value="gloss">Gloss</option>
+              <option value="matte">Matte</option>
+          </select>
+
+        </div>
+      </div>
+
     </div>
 
-  </div>
+    <!-- ############################## Scrolling Body ############################## -->
 
-  <!-- ############################## Scrolling Body ############################## -->
+    <div id="ui">
 
-  <div id="ui">
+      <!-- Accessories Section -->
+      <div id="Accessories">
+        <header id="AccessoriesHeader">Controls & Accessories</header>
 
-    <!-- Accessories Section -->
-    <div id="Accessories">
-      <header id="AccessoriesHeader">Controls & Accessories</header>
+        <!-- Accessories Card -->
+        <div id="AccessoriesCard">
 
-      <!-- Accessories Card -->
-      <div id="AccessoriesCard">
+          <div>
+            <label for="handlebarsSelect">Handlebars</label>
 
-        <div>
-          <label for="handlebarsSelect">Handlebars</label>
-
-          <select id="handlebarsSelect">
-            <option value="HandleBars_CHR">Chrome</option>
-            <option value="HandleBars_BLK_GLSS">Black Gloss</option>
-            <option value="HandleBars_BLK_MTT">Black Matte</option>
-          </select>
-        </div>
-
-        <div>
-          <label for="tachSelect">Tachometer</label>
-
-          <select id="tachSelect">
-            <option value="Tach_OG">Stock Tach</option>
-            <option value="Tach_Nacelle">Nacelle Tach</option>
-          </select>
-        </div>
-        <div>
-          <label for="gripsSelect">Grips</label>
-
-          <select id="gripsSelect">
-            <option value="Grips_STOCK">Stock Grips</option>
-            <option value="Grips_KURY_ISO_CHR">Kuryakyn ISO Chrome</option>
-            <option value="Grips_KURY_ISO_BLK_GLSS">Kuryakyn ISO Blk Gloss</option>
-            <option value="Grips_KURY_ISO_STLTO_CHR">Kuryakyn ISO + Stiletto Chrome</option>
-            <option value="Grips_KURY_ISO_STLTO_BLK_GLSS">Kuryakyn ISO + Stiletto Blk Gloss</option>
-          </select>
-        </div>
-        <div>
-          <label for="mirrorsSelect">Mirrors</label>
-        
-          <select id="mirrorsSelect">
-            <option value="Mirrors_STOCK">Stock Mirrors</option>
-            <option value="Mirrors_KURYMAG">Kuryakyn Magnum Mirrors</option>
-          </select>
-        </div>
-        <div>
-          <label for="dashSelect">Dash</label>
-
-          <select id="dashSelect">
-            <option value="Dash_STOCK">Stock Dash</option>
-            <option value="Dash_STOCK_COLORMATCH">Stock Dash - Color Matched</option>
-            <option value="Dash_STOCK_BLK_GLSS">Stock Dash - Black Gloss</option>
-            <option value="Dash_Extended">Extended Dash</option>
-          </select>
-        </div>
-
-        <div>
-          <label for="risersSelect">Risers</label>
-
-          <select id="risersSelect">
-            <option value="Risers_STOCK">Stock Risers</option>
-            <option value="Risers_STOCK_BLK_GLSS">Stock Risers - Black Gloss</option>
-            <option value="Risers_STOCK_BLK_MTT">Stock Risers - Black Matte</option>
-          </select>
-        </div>
-
-        <div>
-          <label for="tripletreeSelect">Triple Tree</label>
-
-          <select id="tripletreeSelect">
-            <option value="TripleTree_STOCK">Stock Triple Tree</option>
-            <option value="TripleTree_STOCK_BLK_GLSS">Stock Triple Tree - Black Gloss</option>
-            <option value="TripleTree_STOCK_BLK_MTT">Stock Triple Tree - Black Matte</option>
-          </select>
-        </div>
-
-        <div>
-          <label for="forksSelect">Forks</label>
-
-          <select id="forksSelect">
-            <option value="Forks_STOCK">Stock Forks</option>
-            <option value="Forks_STOCK_BLK_GLSS">Stock Forks - Blk Gloss</option>
-            <option value="Forks_STOCK_BLK_MTT">Stock Forks - Blk Matte</option>
-            <option value="Forks_SUMOX_FAT_CHR">Sumo X Fat Forks - Chrome</option>
-            <option value="Forks_SUMOX_FAT_BLK_GLSS">Sumo X Fat Forks - Blk Gloss</option>
-            <option value="Forks_SUMOX_FAT_BLK_MTT">Sumo X Fat Forks - Blk Matte</option>
-          </select>
-        </div>
-
-        <div>
-          <label for="forkcapsSelect">Fork Caps</label>
-
-          <select id="forkcapsSelect">
-            <option value="ForkCaps_STOCK">Stock Caps</option>
-            <option value="ForkCaps_BLK_GLSS">Blk Gloss</option>
-            <option value="ForkCaps_BLK_MTT">Blk Matte</option>
-          </select>
-        </div>
-
-        <div>
-          <label for="forkendsSelect">Fork Ends</label>
-          
-          <select id="forkendsSelect">
-            <option value="ForkEnds_STOCK">Stock Finish</option>
-            <option value="ForkEnds_BLK_GLSS">Blk Gloss</option>
-          </select>
-        </div>
-
-        <div>
-          <label for="frontrotorsSelect">Front Rotors</label>
-
-          <select id="frontrotorsSelect">
-            <option value="FrontRotors_STOCK">Stock Rotors</option>
-            <option value="FrontRotors_STOCK_BLK_GLSS">Stock Rotors - Blk Gloss</option>
-            <option value="FrontRotors_ARASH_BLK">Arashi Rotors - Blk</option>
-            <option value="FrontRotors_ARASH_GOLD">Arashi Rotors - Gold</option>
-          </select>
-        </div>
-      </div>
-    </div>
-
-    <!-- Intake & Exhaust Section -->
-    <div id="IntakeExhaust">
-      <header id="IntakeExhaustHeader">Intake & Exhausts</header>
-
-      <!-- Intake & Exhaust Card -->
-      <div id="IntakeExhaustCard">
-        <div>
-          <label for="intakeSelect">Intake</label>
-
-          <select id="intakeSelect">
-            <option value="Intake_STOCK_CHR">Stock - Chrome</option>
-            <option value="Intake_STOCK_BLK_GLSS">Stock - Blk Gloss</option>
-            <option value="Intake_STOCK_BLK_MTT">Stock - Blk Matte</option>
-            <option value="Intake_Q5_CHR">Q5 - Chrome</option>
-            <option value="Intake_Q5_BLK_GLSS">Q5 - Blk Gloss</option>
-            <option value="Intake_Q5_BLK_MTT">Q5 - Blk Matte</option>
-          </select>
-        </div>
-
-        <div>
-          <label for="exhaustSelect">Exhaust</label>
-
-          <select id="exhaustSelect">
-            <option value="Exhaust_STOCK_CHR">Stock - Chrome</option>
-            <option value="Exhaust_STOCK_BLK_GLSS">Stock - Blk Gloss</option>
-            <option value="Exhaust_STOCK_BLK_MTT">Stock - Blk Matte</option>
-            <option value="Exhaust_SCORPION_CHR">Scorpion - Chrome</option>
-            <option value="Exhaust_SCORPION_BLK_GLSS">Scorpion - Blk Gloss</option>
-            <option value="Exhaust_SCORPION_BLK_MTT">Scorpion - Blk Matte</option>
-            <option value="Exhaust_SharpCurve_CHR">Freedom Exhaust Sharp Curve Radius Scallop - Chrome</option>
-            <option value="Exhaust_SharpCurve_BLK_GLSS">Freedom Exhaust Sharp Curve Radius Scallop - Blk Gloss</option>
-            <option value="Exhaust_SharpCurve_BLK_MTT">Freedom Exhaust Sharp Curve Radius Scallop - Blk Matte</option>
-            <option value="Exhaust_VLCTY_PRO_SHRT_CHR"> Hard Krome VPR Short - Chrome</option>
-            <option value="Exhaust_VLCTY_PRO_SHRT_CRMC_BLK">Hard Krome VPR Short - Ceramic Blk </option>
-            <option value="Exhaust_VLCTY_PRO_CHR"> Hard Krome VPR - Chrome</option>
-            <option value="Exhaust_VLCTY_PRO_CRMC_BLK">Hard Krome VPR - Ceramic Blk </option>
-            <option value="Exhaust_SDBRNR_SHRT_CHR">Hard Krome Short Sideburner - Chrome</option>
-            <option value="Exhaust_SDBRNR_SHRT_CRMC_BLK">Hard Krome Short Sideburner - Ceramic Blk</option>
-            <option value="Exhaust_SDBRNR_CHR">Hard Krome Sideburner - Chrome</option>
-            <option value="Exhaust_SDBRNR_CRMC_BLK"> Hard Krome Sideburner - Ceramic Blk</option>
-            <option value="Exhaust_REVO_CANNON_MONSTER_CHR"> REVO Cannon Monster - Chrome</option>
-            <option value="Exhaust_REVO_CANNON_MONSTER_BLK_GLSS"> REVO Cannon Monster - Blk Gloss</option>
-            <option value="Exhaust_REVO_CANNON_MONSTER_BLK_MTT"> REVO Cannon Monster - Blk Matte</option>
-          </select>
-        </div>
-      </div>
-    </div>
-
-    <!-- Body Section -->
-    <div id="Body">
-      <header id="BodyHeader">Body</header>
-
-      <!-- Body Card -->
-      <div id="BodyCard">
-        <div>
-          <label for="chinSelect">Chin</label>
-
-          <select id="chinSelect">
-            <option value="chin_STOCK">Stock Chin</option>
-            <option value="chin_MEANY">Meancycles Chin</option>
-          </select>
-        </div>
-        <div>
-          <label for="fenderSelect">Front Fender</label>
-
-          <select id="fenderSelect">
-            <option value="FrontFender_STOCK">Stock Fender</option>
-            <option value="FrontFender_STEALTH">Stealth Fender</option>
-          </select>
-        </div>
-        <div>
-          <label for="nacelleShroudSelect">Headlight Nacelle</label>
-
-          <select id="nacelleShroudSelect">
-            <option value="NacelleShroud_CHR">Chrome Shroud</option>
-            <option value="NacelleShroud_BSCLR">Color Matched</option>
-          </select>
-        </div>
-        <div>
-          <label for="seatSelect">Seat</label>
-
-          <select id="seatSelect">
-            <option value="Seat_STOCK">Stock Seat</option>
-            <option value="Seat_GEL">Gel Seat</option>
-          </select>
-        </div>
-
-        <div>
-          <label for="rearFenderSelect">Rear Fender</label>
-
-          <select id="rearFenderSelect">
-            <option value="RearFender_STOCK">Stock Rear</option>
-            <option value="RearFender_STEALTH">Stealth Rear</option>
-          </select>
-        </div>
-
-        <div>
-          <label for="siderearcoverSelect">Rear Side Cover</label>
-
-          <select id="siderearcoverSelect">
-            <option value="SideRearCover_STOCK">Stock</option>
-            <option value="SideRearCover_COLORMATCH">Stock - Color Matched</option>
-            <option value="SideRearCover_STOCK_CHR_PLT">Stock - Chrome Plates</option>
-          </select>
-        </div>
-
-        <div>
-          <label for="passseatSelect">Passenger Seat</label>
-
-          <select id="passseatSelect">
-            <option value="PassengerSeat_COVER_STOCK">Cover</option>
-          </select>
-        </div>
-
-        <div>
-          <label for="derbyCoverSelect">Derby Cover</label>
-
-            <select id="derbyCoverSelect">
-              <option value="DerbyCover_ALMN">Aluminum Stock</option>
-              <option value="DerbyCover_3D_CHR">3D Chrome</option>
-              <option value="DerbyCover_3D_BLK_GLSS">3D Black Gloss</option>
+            <select id="handlebarsSelect">
+              <option value="HandleBars_CHR">Chrome</option>
+              <option value="HandleBars_BLK_GLSS">Black Gloss</option>
+              <option value="HandleBars_BLK_MTT">Black Matte</option>
             </select>
-        </div>
-      </div>
+          </div>
 
-    </div>
+          <div>
+            <label for="tachSelect">Tachometer</label>
 
-    <!-- Lighting Section -->
-    <div id="Lighting">
-      <header id="LightingHeader">Lighting</header>
+            <select id="tachSelect">
+              <option value="Tach_OG">Stock Tach</option>
+              <option value="Tach_Nacelle">Nacelle Tach</option>
+            </select>
+          </div>
+          <div>
+            <label for="gripsSelect">Grips</label>
 
-      <!-- Lighting Card -->
-      <div id="LightingCard">
-        <div>
-          <label for="brakelightSelect">Brake Light</label>
+            <select id="gripsSelect">
+              <option value="Grips_STOCK">Stock Grips</option>
+              <option value="Grips_KURY_ISO_CHR">Kuryakyn ISO Chrome</option>
+              <option value="Grips_KURY_ISO_BLK_GLSS">Kuryakyn ISO Blk Gloss</option>
+              <option value="Grips_KURY_ISO_STLTO_CHR">Kuryakyn ISO + Stiletto Chrome</option>
+              <option value="Grips_KURY_ISO_STLTO_BLK_GLSS">Kuryakyn ISO + Stiletto Blk Gloss</option>
+            </select>
+          </div>
+          <div>
+            <label for="mirrorsSelect">Mirrors</label>
           
-          <select id="brakelightSelect">
-            <option value="BrakeLight_RED">Red Brake Light</option>
-            <option value="BrakeLight_CLEAR">Clear Brake Light</option>
-            <option value="BrakeLight_SMOKE">Smoke Brake Light</option>
-          </select>
+            <select id="mirrorsSelect">
+              <option value="Mirrors_STOCK">Stock Mirrors</option>
+              <option value="Mirrors_KURYMAG">Kuryakyn Magnum Mirrors</option>
+            </select>
+          </div>
+          <div>
+            <label for="dashSelect">Dash</label>
 
+            <select id="dashSelect">
+              <option value="Dash_STOCK">Stock Dash</option>
+              <option value="Dash_STOCK_COLORMATCH">Stock Dash - Color Matched</option>
+              <option value="Dash_STOCK_BLK_GLSS">Stock Dash - Black Gloss</option>
+              <option value="Dash_Extended">Extended Dash</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="risersSelect">Risers</label>
+
+            <select id="risersSelect">
+              <option value="Risers_STOCK">Stock Risers</option>
+              <option value="Risers_STOCK_BLK_GLSS">Stock Risers - Black Gloss</option>
+              <option value="Risers_STOCK_BLK_MTT">Stock Risers - Black Matte</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="tripletreeSelect">Triple Tree</label>
+
+            <select id="tripletreeSelect">
+              <option value="TripleTree_STOCK">Stock Triple Tree</option>
+              <option value="TripleTree_STOCK_BLK_GLSS">Stock Triple Tree - Black Gloss</option>
+              <option value="TripleTree_STOCK_BLK_MTT">Stock Triple Tree - Black Matte</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="forksSelect">Forks</label>
+
+            <select id="forksSelect">
+              <option value="Forks_STOCK">Stock Forks</option>
+              <option value="Forks_STOCK_BLK_GLSS">Stock Forks - Blk Gloss</option>
+              <option value="Forks_STOCK_BLK_MTT">Stock Forks - Blk Matte</option>
+              <option value="Forks_SUMOX_FAT_CHR">Sumo X Fat Forks - Chrome</option>
+              <option value="Forks_SUMOX_FAT_BLK_GLSS">Sumo X Fat Forks - Blk Gloss</option>
+              <option value="Forks_SUMOX_FAT_BLK_MTT">Sumo X Fat Forks - Blk Matte</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="forkcapsSelect">Fork Caps</label>
+
+            <select id="forkcapsSelect">
+              <option value="ForkCaps_STOCK">Stock Caps</option>
+              <option value="ForkCaps_BLK_GLSS">Blk Gloss</option>
+              <option value="ForkCaps_BLK_MTT">Blk Matte</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="forkendsSelect">Fork Ends</label>
+            
+            <select id="forkendsSelect">
+              <option value="ForkEnds_STOCK">Stock Finish</option>
+              <option value="ForkEnds_BLK_GLSS">Blk Gloss</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="frontrotorsSelect">Front Rotors</label>
+
+            <select id="frontrotorsSelect">
+              <option value="FrontRotors_STOCK">Stock Rotors</option>
+              <option value="FrontRotors_STOCK_BLK_GLSS">Stock Rotors - Blk Gloss</option>
+              <option value="FrontRotors_ARASH_BLK">Arashi Rotors - Blk</option>
+              <option value="FrontRotors_ARASH_GOLD">Arashi Rotors - Gold</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <!-- Intake & Exhaust Section -->
+      <div id="IntakeExhaust">
+        <header id="IntakeExhaustHeader">Intake & Exhausts</header>
+
+        <!-- Intake & Exhaust Card -->
+        <div id="IntakeExhaustCard">
+          <div>
+            <label for="intakeSelect">Intake</label>
+
+            <select id="intakeSelect">
+              <option value="Intake_STOCK_CHR">Stock - Chrome</option>
+              <option value="Intake_STOCK_BLK_GLSS">Stock - Blk Gloss</option>
+              <option value="Intake_STOCK_BLK_MTT">Stock - Blk Matte</option>
+              <option value="Intake_Q5_CHR">Q5 - Chrome</option>
+              <option value="Intake_Q5_BLK_GLSS">Q5 - Blk Gloss</option>
+              <option value="Intake_Q5_BLK_MTT">Q5 - Blk Matte</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="exhaustSelect">Exhaust</label>
+
+            <select id="exhaustSelect">
+              <option value="Exhaust_STOCK_CHR">Stock - Chrome</option>
+              <option value="Exhaust_STOCK_BLK_GLSS">Stock - Blk Gloss</option>
+              <option value="Exhaust_STOCK_BLK_MTT">Stock - Blk Matte</option>
+              <option value="Exhaust_SCORPION_CHR">Scorpion - Chrome</option>
+              <option value="Exhaust_SCORPION_BLK_GLSS">Scorpion - Blk Gloss</option>
+              <option value="Exhaust_SCORPION_BLK_MTT">Scorpion - Blk Matte</option>
+              <option value="Exhaust_SharpCurve_CHR">Freedom Exhaust Sharp Curve Radius Scallop - Chrome</option>
+              <option value="Exhaust_SharpCurve_BLK_GLSS">Freedom Exhaust Sharp Curve Radius Scallop - Blk Gloss</option>
+              <option value="Exhaust_SharpCurve_BLK_MTT">Freedom Exhaust Sharp Curve Radius Scallop - Blk Matte</option>
+              <option value="Exhaust_VLCTY_PRO_SHRT_CHR"> Hard Krome VPR Short - Chrome</option>
+              <option value="Exhaust_VLCTY_PRO_SHRT_CRMC_BLK">Hard Krome VPR Short - Ceramic Blk </option>
+              <option value="Exhaust_VLCTY_PRO_CHR"> Hard Krome VPR - Chrome</option>
+              <option value="Exhaust_VLCTY_PRO_CRMC_BLK">Hard Krome VPR - Ceramic Blk </option>
+              <option value="Exhaust_SDBRNR_SHRT_CHR">Hard Krome Short Sideburner - Chrome</option>
+              <option value="Exhaust_SDBRNR_SHRT_CRMC_BLK">Hard Krome Short Sideburner - Ceramic Blk</option>
+              <option value="Exhaust_SDBRNR_CHR">Hard Krome Sideburner - Chrome</option>
+              <option value="Exhaust_SDBRNR_CRMC_BLK"> Hard Krome Sideburner - Ceramic Blk</option>
+              <option value="Exhaust_REVO_CANNON_MONSTER_CHR"> REVO Cannon Monster - Chrome</option>
+              <option value="Exhaust_REVO_CANNON_MONSTER_BLK_GLSS"> REVO Cannon Monster - Blk Gloss</option>
+              <option value="Exhaust_REVO_CANNON_MONSTER_BLK_MTT"> REVO Cannon Monster - Blk Matte</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <!-- Body Section -->
+      <div id="Body">
+        <header id="BodyHeader">Body</header>
+
+        <!-- Body Card -->
+        <div id="BodyCard">
+          <div>
+            <label for="chinSelect">Chin</label>
+
+            <select id="chinSelect">
+              <option value="chin_STOCK">Stock Chin</option>
+              <option value="chin_MEANY">Meancycles Chin</option>
+            </select>
+          </div>
+          <div>
+            <label for="fenderSelect">Front Fender</label>
+
+            <select id="fenderSelect">
+              <option value="FrontFender_STOCK">Stock Fender</option>
+              <option value="FrontFender_STEALTH">Stealth Fender</option>
+            </select>
+          </div>
+          <div>
+            <label for="nacelleShroudSelect">Headlight Nacelle</label>
+
+            <select id="nacelleShroudSelect">
+              <option value="NacelleShroud_CHR">Chrome Shroud</option>
+              <option value="NacelleShroud_BSCLR">Color Matched</option>
+            </select>
+          </div>
+          <div>
+            <label for="seatSelect">Seat</label>
+
+            <select id="seatSelect">
+              <option value="Seat_STOCK">Stock Seat</option>
+              <option value="Seat_GEL">Gel Seat</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="rearFenderSelect">Rear Fender</label>
+
+            <select id="rearFenderSelect">
+              <option value="RearFender_STOCK">Stock Rear</option>
+              <option value="RearFender_STEALTH">Stealth Rear</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="siderearcoverSelect">Rear Side Cover</label>
+
+            <select id="siderearcoverSelect">
+              <option value="SideRearCover_STOCK">Stock - Black Gloss</option>
+              <option value="SideRearCover_COLORMATCH">Color Matched</option>
+              <option value="SideRearCover_CHR_PLT">Black Gloss + Chrome Plates</option>
+              <option value="SideRearCover_COLORMATCH_CHR_PLT">Color Matched + Chrome Plates</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="lowersidecoversSelect">Lower Side Cover</label>
+
+            <select id="lowersidecoversSelect">
+              <option value="LowerSideCovers_STOCK">Stock</option>
+              <option value="LowerSideCovers_COLORMATCH">Color Matched</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="passseatSelect">Passenger Seat</label>
+
+            <select id="passseatSelect">
+              <option value="PassengerSeat_COVER_STOCK">Cover</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="derbyCoverSelect">Derby Cover</label>
+
+              <select id="derbyCoverSelect">
+                <option value="DerbyCover_ALMN">Aluminum Stock</option>
+                <option value="DerbyCover_3D_CHR">3D Chrome</option>
+                <option value="DerbyCover_3D_BLK_GLSS">3D Black Gloss</option>
+              </select>
+          </div>
         </div>
 
-        <div>
-          <label for="headlampSelect">Headlamp</label>
+      </div>
 
-          <select id="headlampSelect">
-            <option value="Headlamp_STOCK">Stock Headlamp</option>
-            <option value="Headlamp_LED">LED Headlamp</option>
-          </select>
+      <!-- Lighting Section -->
+      <div id="Lighting">
+        <header id="LightingHeader">Lighting</header>
 
-        </div>
+        <!-- Lighting Card -->
+        <div id="LightingCard">
+          <div>
+            <label for="brakelightSelect">Brake Light</label>
+            
+            <select id="brakelightSelect">
+              <option value="BrakeLight_RED">Red Brake Light</option>
+              <option value="BrakeLight_CLEAR">Clear Brake Light</option>
+              <option value="BrakeLight_SMOKE">Smoke Brake Light</option>
+            </select>
 
-        <div>
-          <label for="RearTurnSignalsSelect">Rear Turn Signals</label>
+          </div>
 
-          <select id="RearTurnSignalsSelect">
-            <option value="RearTurnSignals_STOCK_AMBR">Stock Amber</option>
-            <option value="RearTurnSignals_STOCK_WHITE">Stock White</option>
-            <option value="RearTurnSignals_RAW">Raw Design</option>
-          </select>
+          <div>
+            <label for="headlampSelect">Headlamp</label>
 
-        </div>
+            <select id="headlampSelect">
+              <option value="Headlamp_STOCK">Stock Headlamp</option>
+              <option value="Headlamp_LED">LED Headlamp</option>
+            </select>
 
-        <div>
-          <label for="FrontTurnSignalsSelect">Front Turn Signals</label>
+          </div>
 
-          <select id="FrontTurnSignalsSelect">
-            <option value="FrontTurnSignals_STOCK_AMBR">Stock Amber</option>
-            <option value="FrontTurnSignals_STOCK_WHITE">Stock White</option>
-            <option value="FrontTurnSignals_LOWPRO1_CHR">Low Profile 1 - Chrome</option>
-            <option value="FrontTurnSignals_LOWPRO1_BLK">Low Profile 1 - Blk</option>
-          </select>
+          <div>
+            <label for="RearTurnSignalsSelect">Rear Turn Signals</label>
+
+            <select id="RearTurnSignalsSelect">
+              <option value="RearTurnSignals_STOCK_AMBR">Stock Amber</option>
+              <option value="RearTurnSignals_STOCK_WHITE">Stock White</option>
+              <option value="RearTurnSignals_RAW">Raw Design</option>
+            </select>
+
+          </div>
+
+          <div>
+            <label for="FrontTurnSignalsSelect">Front Turn Signals</label>
+
+            <select id="FrontTurnSignalsSelect">
+              <option value="FrontTurnSignals_STOCK_AMBR">Stock Amber</option>
+              <option value="FrontTurnSignals_STOCK_WHITE">Stock White</option>
+              <option value="FrontTurnSignals_LOWPRO1_CHR">Low Profile 1 - Chrome</option>
+              <option value="FrontTurnSignals_LOWPRO1_BLK">Low Profile 1 - Blk</option>
+            </select>
+
+          </div>
 
         </div>
 
       </div>
 
-    </div>
+      <!-- Decals Section -->
+      <div id="Decals">
+        <header id="DecalsHeader">Decals</header>
 
-    <!-- Decals Section -->
-    <div id="Decals">
-      <header id="DecalsHeader">Decals</header>
-
-      <!-- Decals Card -->
-      <div id="DecalsCard">
-        <button id="showBadges_STOCK">Toggle Stock Badges</button>
-        <button id="showStickers_Fender">Toggle Side Fenders</button>
-        <button id="showStickers_Rear">Toggle Rear Sticker</button>
+        <!-- Decals Card -->
+        <div id="DecalsCard">
+          <button id="showBadges_STOCK">Toggle Stock Badges</button>
+          <button id="showStickers_Fender">Toggle Side Fenders</button>
+          <button id="showStickers_Rear">Toggle Rear Sticker</button>
+        </div>
       </div>
-    </div>
 
-    <!-- Options Section-->
-    <div id="Options">
-      <header id="OptionsHeader">Options</header>
+      <!-- Options Section-->
+      <div id="Options">
+        <header id="OptionsHeader">Options</header>
 
-      <!-- Options Card -->
-      <div id="OptionsCard">
-        <button id="showTank_Bra">Toggle Tank Bra</button>
+        <!-- Options Card -->
+        <div id="OptionsCard">
+          <button id="showTank_Bra">Toggle Tank Bra</button>
+        </div>
       </div>
     </div>
   </div>
