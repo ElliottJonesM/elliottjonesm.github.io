@@ -2,8 +2,8 @@
 <html>
 <head>
     <title>M109R Configurator</title>
-  <script type="module" crossorigin src="/assets/index-CG2mC9sV.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-BPYDqTef.css">
+  <script type="module" crossorigin src="/assets/index-B_7D4qhF.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-1didIqb0.css">
 </head>
 <body>
   <div id="loadingOverlay">
@@ -33,18 +33,26 @@
     </div>
 
     <div id="version">
-      Version 3.4.1
+      Version 3.4.2
     </div>
 
     <div id="hdriPickerPanel">
+      <label id="hdritext">HDRI</label>
       <button class="hdriButton" data-hdri="studiohdri4.exr">1</button>
       <button class="hdriButton" data-hdri="studiohdri2.exr">2</button>
       <button class="hdriButton" data-hdri="studiohdri.exr">3</button>
     </div>
 
-    <button id="resetStockButton">Reset Bike</button>
-    <button id="saveConfigurationButton">Save Build</button>
-    <button id="loadConfigurationButton">Load Saved Build</button>
+    <div id="ConfigurationButtons">
+      <button id="resetStockButton">Reset Bike</button>
+      <button id="saveConfigurationButton">Save Build</button>
+      <button id="loadConfigurationButton">Load Saved Build</button>
+    </div>
+
+    <div id="bgsetPickerPanel">
+      <label for="bgsetFinishSelect">Background:</label>
+      <input type="color" id="bgsetColorPicker" value="#000000">
+    </div>
 
     <div id="bottomViewerBar">
 
