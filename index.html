@@ -2,8 +2,8 @@
 <html>
 <head>
     <title>M109R Configurator</title>
-  <script type="module" crossorigin src="/assets/index-2Efjg1_k.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-1didIqb0.css">
+  <script type="module" crossorigin src="/assets/index-CGH9ofUb.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-CbN0_9qb.css">
 </head>
 <body>
   <div id="loadingOverlay">
@@ -33,7 +33,7 @@
     </div>
 
     <div id="version">
-      Version 3.4.2
+      Version 3.5.2
     </div>
 
     <div id="hdriPickerPanel">
@@ -164,7 +164,15 @@
               <option value="Dash_EXT_COLORMATCH">Extended Dash - Color Matched</option>
             </select>
           </div>
+        </div>
+      </div>
 
+                        <!-- Front End Section -->
+      <div id="FrontEnd">
+        <header id="FrontEndHeader">Front End</header>
+
+        <!-- Brakes & Wheels Card -->
+        <div id="FrontEndCard">
           <div>
             <label for="risersSelect">Risers</label>
 
@@ -214,6 +222,23 @@
             <select id="forkendsSelect">
               <option value="ForkEnds_STOCK">Stock Finish</option>
               <option value="ForkEnds_BLK_GLSS">Black Gloss</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+                  <!-- Brakes & Wheels Section -->
+      <div id="BrakesWheels">
+        <header id="BrakesWheelsHeader">Brakes & Wheels</header>
+
+        <!-- Brakes & Wheels Card -->
+        <div id="BrakesWheelsCard">
+          <div>
+            <label for="rearrotorsSelect">Rear Rotor</label>
+
+            <select id="rearrotorsSelect">
+              <option value="RearRotor_STOCK">Stock Rotor</option>
+              <option value="RearRotor_GALFER">Galfer Rotor - Black</option>
             </select>
           </div>
 
@@ -281,6 +306,34 @@
         </div>
       </div>
 
+            <!-- Engine Section -->
+      <div id="Engine">
+        <header id="EngineHeader">Engine</header>
+
+        <!-- Intake & Exhaust Card -->
+        <div id="EngineCard">
+          <div>
+            <label for="derbyCoverSelect">Derby Cover</label>
+
+              <select id="derbyCoverSelect">
+                <option value="DerbyCover_ALMN">Aluminum Stock</option>
+                <option value="DerbyCover_3D_CHR">3D Chrome</option>
+                <option value="DerbyCover_3D_BLK_GLSS">3D Black Gloss</option>
+              </select>
+          </div>
+
+          <div>
+            <label for="engineguardSelect">Engine Guards</label>
+
+            <select id="engineguardSelect">
+              <option value="">None</option>
+              <option value="EngineGuard_GEN_SUZ_CHR">Suzuki - CHR</option>
+              <option value="EngineGuard_GEN_SUZ_BLK_GLSS">Suzuki - Black</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
       <!-- Body Section -->
       <div id="Body">
         <header id="BodyHeader">Body</header>
@@ -291,10 +344,25 @@
             <label for="chinSelect">Chin</label>
 
             <select id="chinSelect">
-              <option value="chin_STOCK">Stock Chin</option>
-              <option value="chin_MEANY">Meancycles Chin</option>
+              <option value="Chin_STOCK">Stock Chin</option>
+              <option value="Chin_MEANY">Chin Scoop - Color Matched</option>
+              <option value="Chin_MEANY_MESH_COLORMATCH_OCT_CHR">Chin Scoop - Color Matched, Chrome Mesh</option>
+              <option value="Chin_MEANY_MESH_COLORMATCH_OCT_BLK">Chin Scoop - Color Matched, Black Mesh</option>
+              <option value="Chin_MEANY_MESH_BLK_GLSS_OCT_CHR">Chin Scoop - Black Gloss, Chrome Mesh</option>
+              <option value="Chin_MEANY_MESH_BLK_GLSS_OCT_BLK">Chin Scoop - Black Gloss, Black Mesh</option>
             </select>
           </div>
+
+          <div>
+            <label for="radiatorgrillSelect">Radiator Grill</label>
+
+            <select id="radiatorgrillSelect">
+              <option value="RadiatorGrill_STOCK">Stock Radiator Grill</option>
+              <option value="RadiatorGrill_M109R_001_CHR">TOC - Chrome</option>
+              <option value="RadiatorGrill_M109R_001_BLK">TOC - Black</option>
+            </select>
+          </div>
+
           <div>
             <label for="fenderSelect">Front Fender</label>
 
@@ -344,6 +412,17 @@
           </div>
 
           <div>
+            <label for="framehandleSelect">Frame Handles</label>
+
+            <select id="framehandleSelect">
+              <option value="FrameHandle_CHR">Chrome</option>
+              <option value="FrameHandle_BLK_GLSS">Black Gloss</option>
+              <option value="FrameHandle_BLK_MTT">Black Matte</option>
+
+            </select>
+          </div>
+
+          <div>
             <label for="lowersidecoversSelect">Lower Side Cover</label>
 
             <select id="lowersidecoversSelect">
@@ -358,16 +437,6 @@
             <select id="passseatSelect">
               <option value="PassengerSeat_COVER_STOCK">Cover</option>
             </select>
-          </div>
-
-          <div>
-            <label for="derbyCoverSelect">Derby Cover</label>
-
-              <select id="derbyCoverSelect">
-                <option value="DerbyCover_ALMN">Aluminum Stock</option>
-                <option value="DerbyCover_3D_CHR">3D Chrome</option>
-                <option value="DerbyCover_3D_BLK_GLSS">3D Black Gloss</option>
-              </select>
           </div>
         </div>
 
