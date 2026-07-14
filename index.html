@@ -2,8 +2,8 @@
 <html>
 <head>
     <title>M109R Configurator</title>
-  <script type="module" crossorigin src="/assets/index-CGH9ofUb.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-CbN0_9qb.css">
+  <script type="module" crossorigin src="/assets/index-BbipGUaD.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-DJfXffpL.css">
 </head>
 <body>
   <div id="loadingOverlay">
@@ -162,6 +162,27 @@
               <option value="Dash_EXT_BLK_GLSS">Extended Dash - Black Gloss</option>
               <option value="Dash_EXT_BLK_MTT">Extended Dash - Black Matte</option>
               <option value="Dash_EXT_COLORMATCH">Extended Dash - Color Matched</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="windscreenSelect">Windscreen</label>
+
+            <select id="windscreenSelect">
+              <option value="None">None</option>
+              <option value="Windscreen_SPORT">Sport</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="swingarmcoverSelect">Swingarm Cover</label>
+
+            <select id="swingarmcoverSelect">
+              <option value="None">None</option>
+              <option value="SwingArmCover_BLANK_CHR">Solid - Chrome</option>
+              <option value="SwingArmCover_BLANK_BLK_GLSS">Solid - Black Gloss</option>
+              <option value="SwingArmCover_M109R_CHR">M109R - Chrome</option>
+              <option value="SwingArmCover_M109R_BLK_GLSS">M109R - Black Gloss</option>
             </select>
           </div>
         </div>
@@ -326,9 +347,35 @@
             <label for="engineguardSelect">Engine Guards</label>
 
             <select id="engineguardSelect">
-              <option value="">None</option>
+              <option value="None">None</option>
               <option value="EngineGuard_GEN_SUZ_CHR">Suzuki - CHR</option>
               <option value="EngineGuard_GEN_SUZ_BLK_GLSS">Suzuki - Black</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+                  <!-- Seats Section -->
+      <div id="Seats">
+        <header id="SeatsHeader">Seats</header>
+
+        <!-- Seats Card -->
+        <div id="SeatsCard">
+          <div>
+            <label for="passseatSelect">Passenger Seat</label>
+
+            <select id="passseatSelect">
+              <option value="PassengerSeat_COVER_STOCK">Cover</option>
+              <option value="PassengerSeat_STOCK">Stock Seat</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="seatSelect">Seat</label>
+
+            <select id="seatSelect">
+              <option value="Seat_STOCK">Stock Seat</option>
+              <option value="Seat_GEL">Gel Seat</option>
             </select>
           </div>
         </div>
@@ -381,14 +428,6 @@
               <option value="NacelleShroud_BLK_MTT">Black Matte</option>
             </select>
           </div>
-          <div>
-            <label for="seatSelect">Seat</label>
-
-            <select id="seatSelect">
-              <option value="Seat_STOCK">Stock Seat</option>
-              <option value="Seat_GEL">Gel Seat</option>
-            </select>
-          </div>
 
           <div>
             <label for="rearFenderSelect">Rear Fender</label>
@@ -430,15 +469,6 @@
               <option value="LowerSideCovers_COLORMATCH">Color Matched</option>
             </select>
           </div>
-
-          <div>
-            <label for="passseatSelect">Passenger Seat</label>
-
-            <select id="passseatSelect">
-              <option value="PassengerSeat_COVER_STOCK">Cover</option>
-            </select>
-          </div>
-        </div>
 
       </div>
 
