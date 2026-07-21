@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>M109R Configurator</title>
-  <script type="module" crossorigin src="/assets/index-DIlwOQtp.js"></script>
+  <script type="module" crossorigin src="/assets/index-D1hwEvKh.js"></script>
   <link rel="stylesheet" crossorigin href="/assets/index-C83w4SgM.css">
 </head>
 <body>
@@ -33,7 +33,7 @@
     </div>
 
     <div id="version">
-      Version 3.7.3
+      Version 3.8.4
     </div>
 
     <div id="hdriPickerPanel">
@@ -213,8 +213,17 @@
       <div id="FrontEnd">
         <header id="FrontEndHeader">Front End</header>
 
-        <!-- Brakes & Wheels Card -->
+        <!-- Front End Card -->
         <div id="FrontEndCard">
+
+          <div>
+          <label for="wheelfrontSelect">Front Wheel</label>
+
+            <select id="wheelfrontSelect">
+              <option value="WheelFront_STOCK">Stock Rim</option>
+            </select>
+          </div>
+
           <div>
             <label for="risersSelect">Risers</label>
 
@@ -266,6 +275,15 @@
               <option value="ForkEnds_BLK_GLSS">Black Gloss</option>
             </select>
           </div>
+
+          <div>
+            <label for="fenderSelect">Front Fender</label>
+
+            <select id="fenderSelect">
+              <option value="FrontFender_STOCK">Stock Fender</option>
+              <option value="FrontFender_STEALTH">Stealth Fender</option>
+            </select>
+          </div>
         </div>
       </div>
 
@@ -276,11 +294,11 @@
         <!-- Rear End Card -->
         <div id="RearEndCard">
           <div>
-            <label for="rearwheelSelect">Rear Wheel</label>
+            <label for="wheelrearSelect">Rear Wheel</label>
 
-            <select id="rearwheelSelect">
-              <option value="RearWheel_STOCK">Stock Rim</option>
-              <option value="RearWheel_10in">10in Rim</option>
+            <select id="wheelrearSelect">
+              <option value="WheelRear_STOCK">Stock Rim</option>
+              <option value="WheelRear_10in">10in Rim</option>
             </select>
           </div>
 
@@ -293,6 +311,15 @@
               <option value="lowered2">2in Bones</option>
               <option value="lowered3">3in Bones</option>
               <option value="lowered4">Air Ride</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="rearFenderSelect">Rear Fender</label>
+
+            <select id="rearFenderSelect">
+              <option value="RearFender_STOCK">Stock Rear</option>
+              <option value="RearFender_STEALTH">Stealth Rear</option>
             </select>
           </div>
         </div>
@@ -437,6 +464,7 @@
             <select id="passseatSelect">
               <option value="PassengerSeat_COVER_STOCK">Cover</option>
               <option value="PassengerSeat_STOCK">Stock Seat</option>
+              <option value="PassengerSeat_GEL">Gel Seat</option>
             </select>
           </div>
 
@@ -471,15 +499,6 @@
           </div>
 
           <div>
-            <label for="fenderSelect">Front Fender</label>
-
-            <select id="fenderSelect">
-              <option value="FrontFender_STOCK">Stock Fender</option>
-              <option value="FrontFender_STEALTH">Stealth Fender</option>
-            </select>
-          </div>
-
-          <div>
             <label for="nacelleShroudSelect">Headlight Nacelle</label>
 
             <select id="nacelleShroudSelect">
@@ -487,15 +506,6 @@
               <option value="NacelleShroud_BSCLR">Color Matched</option>
               <option value="NacelleShroud_BLK_GLSS">Black Gloss</option>
               <option value="NacelleShroud_BLK_MTT">Black Matte</option>
-            </select>
-          </div>
-
-          <div>
-            <label for="rearFenderSelect">Rear Fender</label>
-
-            <select id="rearFenderSelect">
-              <option value="RearFender_STOCK">Stock Rear</option>
-              <option value="RearFender_STEALTH">Stealth Rear</option>
             </select>
           </div>
 
