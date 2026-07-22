@@ -2,8 +2,8 @@
 <html>
 <head>
     <title>M109R Configurator</title>
-  <script type="module" crossorigin src="/assets/index-CyqNry1U.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-C83w4SgM.css">
+  <script type="module" crossorigin src="/assets/index-iQ54Icfd.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-CkhZZPFM.css">
 </head>
 <body>
   <div id="loadingOverlay">
@@ -195,16 +195,14 @@
           </div>
 
           <div>
-            <label for="swingarmcoverSelect">Swingarm Cover</label>
+            <label for="tankcapSelect">Gas Cap</label>
 
-            <select id="swingarmcoverSelect">
-              <option value="None">None</option>
-              <option value="SwingArmCover_BLANK_CHR">Solid - Chrome</option>
-              <option value="SwingArmCover_BLANK_BLK_GLSS">Solid - Black Gloss</option>
-              <option value="SwingArmCover_M109R_CHR">M109R - Chrome</option>
-              <option value="SwingArmCover_M109R_BLK_GLSS">M109R - Black Gloss</option>
+            <select id="tankcapSelect">
+              <option value="TankCap_ALMN">Aluminum</option>
+              <option value="TankCap_BOSS">Black Gloss</option>
             </select>
           </div>
+          
         </div>
       </div>
 
@@ -332,15 +330,39 @@
               <option value="RearFender_STEALTH">Stealth Rear</option>
             </select>
           </div>
+
+          <div>
+            <label for="swingarmcoverSelect">Swingarm Cover</label>
+
+            <select id="swingarmcoverSelect">
+              <option value="None">None</option>
+              <option value="SwingArmCover_BLANK_CHR">Solid - Chrome</option>
+              <option value="SwingArmCover_BLANK_BLK_GLSS">Solid - Black Gloss</option>
+              <option value="SwingArmCover_M109R_CHR">M109R - Chrome</option>
+              <option value="SwingArmCover_M109R_BLK_GLSS">M109R - Black Gloss</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="framehandleSelect">Frame Handles</label>
+
+            <select id="framehandleSelect">
+              <option value="FrameHandle_CHR">Chrome</option>
+              <option value="FrameHandle_COLORMATCH">Color Matched</option>
+              <option value="FrameHandle_BLK_GLSS">Black Gloss</option>
+              <option value="FrameHandle_BLK_MTT">Black Matte</option>
+            </select>
+          </div>
+
         </div>
       </div>
 
-                  <!-- Brakes & Wheels Section -->
-      <div id="BrakesWheels">
-        <header id="BrakesWheelsHeader">Brakes & Wheels</header>
+                  <!-- Brakes & Rotors Section -->
+      <div id="BrakesRotors">
+        <header id="BrakesRotorsHeader">Brakes & Rotors</header>
 
         <!-- Brakes & Wheels Card -->
-        <div id="BrakesWheelsCard">
+        <div id="BrakesRotorsCard">
           <div>
             <label for="rearrotorsSelect">Rear Rotor</label>
 
@@ -451,14 +473,6 @@
             </select>
           </div>
 
-          <div>
-            <label for="tankcapSelect">Gas Cap</label>
-
-            <select id="tankcapSelect">
-              <option value="TankCap_ALMN">Aluminum</option>
-              <option value="TankCap_BOSS">Black Gloss</option>
-            </select>
-          </div>
         </div>
       </div>
 
@@ -528,17 +542,6 @@
               <option value="SideRearCover_CHR">Chrome</option>
               <option value="SideRearCover_CHR_PLT">Black Gloss + Chrome Plates</option>
               <option value="SideRearCover_COLORMATCH_CHR_PLT">Color Matched + Chrome Plates</option>
-            </select>
-          </div>
-
-          <div>
-            <label for="framehandleSelect">Frame Handles</label>
-
-            <select id="framehandleSelect">
-              <option value="FrameHandle_CHR">Chrome</option>
-              <option value="FrameHandle_COLORMATCH">Color Matched</option>
-              <option value="FrameHandle_BLK_GLSS">Black Gloss</option>
-              <option value="FrameHandle_BLK_MTT">Black Matte</option>
             </select>
           </div>
 
