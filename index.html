@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>M109R Configurator</title>
-  <script type="module" crossorigin src="/assets/index-BYcEJGhF.js"></script>
+  <script type="module" crossorigin src="/assets/index-p8yDn-iQ.js"></script>
   <link rel="stylesheet" crossorigin href="/assets/index-BhQqigXz.css">
 </head>
 <body>
@@ -37,7 +37,7 @@
     </div>
 
     <div id="version">
-      Version 3.9.6
+      Version 3.10.6
     </div>
 
     <div id="hdriPickerPanel">
@@ -496,7 +496,8 @@
             <select id="passseatSelect">
               <option value="PassengerSeat_COVER_STOCK">Cover</option>
               <option value="PassengerSeat_STOCK">Stock Seat</option>
-              <option value="PassengerSeat_GEL">Gel Seat</option>
+              <option value="PassengerSeat_GEL_LEATHER">Gel Seat - Leather</option>
+              <option value="PassengerSeat_GEL_CARBON">Gel Seat - Carbon</option>
             </select>
           </div>
 
@@ -505,7 +506,7 @@
 
             <select id="seatSelect">
               <option value="Seat_STOCK">Stock Seat</option>
-              <option value="Seat_GEL">Gel Seat</option>
+              <option value="Seat_GEL_LEATHER">Gel Seat - Leather</option>
               <option value="Seat_GEL_CARBON">Gel Seat - Carbon</option>
               <option value="Seat_ULTIMATE">Ultimate</option>
             </select>
@@ -599,7 +600,7 @@
             <select id="RearTurnSignalsSelect">
               <option value="RearTurnSignals_STOCK_AMBR">Stock Amber</option>
               <option value="RearTurnSignals_STOCK_WHITE">Stock White</option>
-              <option value="RearTurnSignals_RAW">Raw Design</option>
+              <option value="RearTurnSignals_RAW">Eliminator Kit</option>
             </select>
 
           </div>
@@ -638,7 +639,15 @@
 
         <!-- Options Card -->
         <div id="OptionsCard">
-          <button id="showTank_Bra">Toggle Tank Bra</button>
+          <div>
+            <label for="tankbraSelect">Tank Bra</label>
+
+            <select id="tankbraSelect">
+              <option value="">None</option>
+              <option value="Tank_Bra_LEATHER">Leather</option>
+              <option value="Tank_Bra_CARBON">Carbon</option>
+            </select>
+          </div>
         </div>
       </div>
     </div>
