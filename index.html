@@ -2,8 +2,8 @@
 <html>
 <head>
     <title>M109R Configurator</title>
-  <script type="module" crossorigin src="/assets/index-BWTW-bI0.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-DWi3452D.css">
+  <script type="module" crossorigin src="/assets/index-7nq5OuRD.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-DxvEsFLx.css">
 </head>
 <body>
   <div id="loadingOverlay">
@@ -28,16 +28,12 @@
         <text>Zoom</text>
     </div>
 
-    <!--<div id="shareBuild">
-      <button class="shareBuildButton" type="button">Share Build</button>
-    </div>> -->
-
     <div id="donate">
         <a href="https://www.paypal.com/donate/?business=E2LTBJEFCEF8E&no_recurring=1&item_name=Enjoying+the+configurator?+Donations+help+support+continued+updates%2C+new+parts%2C+and+improvements.+Thank+you%21&currency_code=USD">Donate</a>
     </div>
 
     <div id="version">
-      Version 3.11.7
+      Version 4.11.7
     </div>
 
     <div id="hdriPickerPanel">
@@ -58,54 +54,10 @@
       <input type="color" id="bgsetColorPicker" value="#000000">
     </div>
 
-    <div id="bottomViewerBar">
+    <!-- <div id="bottomViewerBar">
 
-      <!-- ############## BODY ################# -->
-      <div id="bodyPickerPanel">
-        <label for="bodyFinishSelect">Body Finish </label>
-
-        <input type="color" id="bodyColorPicker" value="#ffffff">
-
-        <select id="bodyFinishSelect">
-            <option value="gloss">Gloss</option>
-            <option value="semigloss">Semi-Gloss</option>
-            <option value="matte">Matte</option>
-            <option value="metallicgloss" selected>Metallic Gloss</option>
-        </select>
-
-      </div>
-
-      <!-- ############## RIMS ################# -->
-      <div id="rimsPickerPanel">
-        <label for="rimsFinishSelect">Rim Finish</label>
-
-        <input type="color" id="rimsColorPicker" value="#666666">
-
-        <select id="rimsFinishSelect">
-            <option value="gloss">Gloss</option>
-            <option value="semigloss">Semi-Gloss</option>
-            <option value="matte">Matte</option>
-            <option value="chrome">Chrome</option>
-        </select>
-
-      </div>
-      <!-- ############## ENGINE ################# -->
-      <div id="enginePickerPanel">
-        <label for="engineFinishSelect">Engine Finish</label>
-
-        <input type="color" id="engineColorPicker" value="#ffffff">
-
-        <select id="engineFinishSelect">
-            <option value="chrome">Chrome</option>
-            <option value="semigloss">Semi-Gloss</option>
-            <option value="gloss">Gloss</option>
-            <option value="matte">Matte</option>
-        </select>
-
-      </div>
-    </div>
-
-  </div>
+  </div> -->
+</div>
 
     <!-- ############################## Scrolling Body ############################## -->
 
@@ -210,12 +162,35 @@
         </div>
       </div>
 
-                        <!-- Front End Section -->
-      <div id="FrontEnd">
-        <header id="FrontEndHeader">Front End</header>
+                              <!-- Wheels & Rims Section -->
+      <div id="WheelsRims">
+        <header id="WheelsRimsHeader">Wheels & Rims</header>
 
-        <!-- Front End Card -->
-        <div id="FrontEndCard">
+        <!-- Wheels & Rims Card -->
+        <div id="WheelsRimsCard">
+
+          <!-- ############## RIMS ################# -->
+          <div id="rimsPickerPanel">
+            <label for="rimsFinishSelect">Rim Finish</label>
+
+            <input type="color" id="rimsColorPicker" value="#666666">
+
+            <select id="rimsFinishSelect">
+                <option value="gloss">Gloss</option>
+                <option value="semigloss">Semi-Gloss</option>
+                <option value="matte">Matte</option>
+                <option value="chrome">Chrome</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="wheelrearSelect">Rear Wheel</label>
+
+            <select id="wheelrearSelect">
+              <option value="WheelRear_STOCK">Stock Rim</option>
+              <option value="WheelRear_10in">10in Rim</option>
+            </select>
+          </div>
 
           <div>
           <label for="wheelfrontSelect">Front Wheel</label>
@@ -224,6 +199,16 @@
               <option value="WheelFront_STOCK">Stock Rim</option>
             </select>
           </div>
+
+        </div>
+      </div>
+
+                        <!-- Front End Section -->
+      <div id="FrontEnd">
+        <header id="FrontEndHeader">Front End</header>
+
+        <!-- Front End Card -->
+        <div id="FrontEndCard">
 
           <div>
             <label for="risersSelect">Risers</label>
@@ -305,14 +290,6 @@
 
         <!-- Rear End Card -->
         <div id="RearEndCard">
-          <div>
-            <label for="wheelrearSelect">Rear Wheel</label>
-
-            <select id="wheelrearSelect">
-              <option value="WheelRear_STOCK">Stock Rim</option>
-              <option value="WheelRear_10in">10in Rim</option>
-            </select>
-          </div>
 
           <div>
             <label for="rideheightSelect">Lowering Links</label>
@@ -462,8 +439,23 @@
       <div id="Engine">
         <header id="EngineHeader">Engine</header>
 
-        <!-- Intake & Exhaust Card -->
+        <!-- Engine Card -->
         <div id="EngineCard">
+
+          <!-- ############## ENGINE ################# -->
+          <div id="enginePickerPanel">
+            <label for="engineFinishSelect">Engine Finish</label>
+
+            <input type="color" id="engineColorPicker" value="#ffffff">
+
+            <select id="engineFinishSelect">
+                <option value="chrome">Chrome</option>
+                <option value="semigloss">Semi-Gloss</option>
+                <option value="gloss">Gloss</option>
+                <option value="matte">Matte</option>
+            </select>
+
+          </div>
           <div>
             <label for="derbyCoverSelect">Derby Cover</label>
 
@@ -534,6 +526,22 @@
 
         <!-- Body Card -->
         <div id="BodyCard">
+
+              <!-- ############## BODY ################# -->
+          <div id="bodyPickerPanel">
+            <label for="bodyFinishSelect">Body Finish </label>
+
+            <input type="color" id="bodyColorPicker" value="#ffffff">
+
+            <select id="bodyFinishSelect">
+                <option value="gloss">Gloss</option>
+                <option value="semigloss">Semi-Gloss</option>
+                <option value="matte">Matte</option>
+                <option value="metallicgloss" selected>Metallic Gloss</option>
+            </select>
+
+          </div>
+
           <div>
             <label for="chinSelect">Chin</label>
 
