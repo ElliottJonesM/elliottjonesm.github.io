@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>M109R Configurator</title>
-  <script type="module" crossorigin src="/assets/index-Cd_XgMsf.js"></script>
+  <script type="module" crossorigin src="/assets/index-DOfN2eIn.js"></script>
   <link rel="stylesheet" crossorigin href="/assets/index-DxvEsFLx.css">
 </head>
 <body>
@@ -33,7 +33,7 @@
     </div>
 
     <div id="version">
-      Version 4.11.7
+      Version 4.12.7
     </div>
 
     <div id="hdriPickerPanel">
@@ -193,10 +193,30 @@
           </div>
 
           <div>
+            <label for="tirerearSelect">Rear Tire</label>
+
+            <select id="tirerearSelect">
+              <option value="TireRear_240_40R18_ELITE4">240/40R18 - Dunlop Elite 4</option>
+              <option value="TireRear_280_35R18_ELITE4">280/35R18 - Dunlop Elite 4</option>
+              <option value="TireRear_240_40R18_ME888">240/40R18 - Metzler 888</option>
+              <option value="TireRear_280_35R18_ME888">280/35R18 - Metzler 888</option>
+            </select>
+          </div>
+
+          <div>
           <label for="wheelfrontSelect">Front Wheel</label>
 
             <select id="wheelfrontSelect">
               <option value="WheelFront_STOCK">Stock Rim</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="tirefrontSelect">Front Tire</label>
+
+            <select id="tirefrontSelect">
+              <option value="TireFront_130_70R18_ELITE4">130/70R18 - Dunlop Elite 4</option>
+              <option value="TireFront_130_70R18_ME888">130/70R18 - Metzler 888</option>
             </select>
           </div>
 
@@ -515,6 +535,7 @@
               <option value="Seat_GEL_LEATHER">Gel Seat - Leather</option>
               <option value="Seat_GEL_CARBON">Gel Seat - Carbon</option>
               <option value="Seat_ULTIMATE">Ultimate</option>
+              <option value="Seat_ULTIMATE_BACKREST">Ultimate w/Backrest</option>
             </select>
           </div>
         </div>
@@ -665,7 +686,7 @@
             <label for="tankbraSelect">Tank Bra</label>
 
             <select id="tankbraSelect">
-              <option value="">None</option>
+              <option value="None">None</option>
               <option value="Tank_Bra_LEATHER">Leather</option>
               <option value="Tank_Bra_CARBON">Carbon</option>
             </select>
